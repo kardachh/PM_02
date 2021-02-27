@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAddRunner));
             this.pictureBoxBackGround = new System.Windows.Forms.PictureBox();
             this.labelMarathon = new System.Windows.Forms.Label();
@@ -35,6 +36,7 @@
             this.labelBefore = new System.Windows.Forms.Label();
             this.labelTimer = new System.Windows.Forms.Label();
             this.buttonBack = new System.Windows.Forms.Button();
+            this.timer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBackGround)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTimer)).BeginInit();
             this.SuspendLayout();
@@ -89,9 +91,8 @@
             this.labelTimer.ForeColor = System.Drawing.Color.White;
             this.labelTimer.Location = new System.Drawing.Point(250, 457);
             this.labelTimer.Name = "labelTimer";
-            this.labelTimer.Size = new System.Drawing.Size(97, 35);
+            this.labelTimer.Size = new System.Drawing.Size(0, 35);
             this.labelTimer.TabIndex = 5;
-            this.labelTimer.Text = "Timer";
             // 
             // buttonBack
             // 
@@ -107,6 +108,11 @@
             this.buttonBack.Text = "< Back";
             this.buttonBack.UseVisualStyleBackColor = false;
             this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
+            // 
+            // timer
+            // 
+            this.timer.Enabled = true;
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
             // FormAddRunner
             // 
@@ -142,6 +148,7 @@
         private System.Windows.Forms.Label labelBefore;
         private System.Windows.Forms.Label labelTimer;
         private System.Windows.Forms.Button buttonBack;
+        private System.Windows.Forms.Timer timer;
     }
 }
 
