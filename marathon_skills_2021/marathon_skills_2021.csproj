@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="forms\FormAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FormAbout.Designer.cs">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </Compile>
     <Compile Include="forms\FormAddRunner.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,6 +70,12 @@
     <Compile Include="forms\FormMarathon.Designer.cs">
       <DependentUpon>FormMarathon.cs</DependentUpon>
     </Compile>
+    <Compile Include="forms\FormSponsor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FormSponsor.Designer.cs">
+      <DependentUpon>FormSponsor.cs</DependentUpon>
+    </Compile>
     <Compile Include="forms\FormWhatRunner.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +84,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="forms\FormAbout.resx">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="forms\FormAddRunner.resx">
       <DependentUpon>FormAddRunner.cs</DependentUpon>
     </EmbeddedResource>
@@ -80,6 +95,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="forms\FormMarathon.resx">
       <DependentUpon>FormMarathon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FormSponsor.resx">
+      <DependentUpon>FormSponsor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\FormWhatRunner.resx">
       <DependentUpon>FormWhatRunner.cs</DependentUpon>

@@ -1,6 +1,6 @@
 ﻿namespace marathon_skills_2021.forms
 {
-    partial class FormAuth
+    partial class FormSponsor
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAuth));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormSponsor));
             this.pictureBoxBackGround = new System.Windows.Forms.PictureBox();
             this.labelMarathon = new System.Windows.Forms.Label();
             this.pictureBoxTimer = new System.Windows.Forms.PictureBox();
@@ -114,7 +114,7 @@
             this.timer.Enabled = true;
             this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
-            // FormAuth
+            // FormSponsor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -130,10 +130,10 @@
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(790, 540);
             this.MinimumSize = new System.Drawing.Size(790, 540);
-            this.Name = "FormAuth";
+            this.Name = "FormSponsor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Marathon 2021 - Authorization";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormAuth_FormClosed);
+            this.Text = "Marathon 2021 - Sponsor";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormSponsor_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBackGround)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTimer)).EndInit();
             this.ResumeLayout(false);

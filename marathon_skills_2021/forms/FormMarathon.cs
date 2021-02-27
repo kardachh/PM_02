@@ -26,17 +26,23 @@ namespace marathon_skills_2021
 
         private void buttonSponsor_Click(object sender, EventArgs e)
         {
-
+            Form formSponsor = new forms.FormSponsor(this);
+            Hide();
+            formSponsor.Show();
         }
 
         private void buttonAbout_Click(object sender, EventArgs e)
         {
-
+            Form formAbout = new forms.FormAbout(this);
+            Hide();
+            formAbout.Show();
         }
 
         private void buttonLogin_Click(object sender, EventArgs e)
         {
-
+            Form formAuth = new forms.FormAuth(this);
+            Hide();
+            formAuth.Show();
         }
 
         private void timer_Tick(object sender, EventArgs e)

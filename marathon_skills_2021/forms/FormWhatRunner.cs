@@ -5,25 +5,29 @@ namespace marathon_skills_2021.forms
 {
     public partial class FormWhatRunner : Form
     {
-        private FormMarathon formMarathon;
-        public FormWhatRunner(FormMarathon formMarathon)
+        private Form formPrev;
+        public FormWhatRunner(Form formPrev)
         {
             InitializeComponent();
-            this.formMarathon = formMarathon;
+            this.formPrev = formPrev;
+            buttonBack.Text = "< " + formPrev.Text;
+            buttonBack.AutoSize = true;
             timer_Tick(timer, null);
         }
-
+        private void FormWhatRunner_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            formPrev.Show();
+        }
         private void buttonShowRunner_Click(object sender, EventArgs e)
         {
-
+            // логин 
         }
-
         private void buttonAddNewRunner_Click(object sender, EventArgs e)
         {
-            Form formAddRunner = new forms.FormAddRunner();
+            Form formAddRunner = new forms.FormAddRunner(this);
+            Hide();
             formAddRunner.Show();
         }
-
         private void buttonBack_Click(object sender, EventArgs e)
         {
             Close();
@@ -34,11 +38,6 @@ namespace marathon_skills_2021.forms
             DateTime time = DateTime.Now;
             TimeSpan duration = end - time;
             labelTimer.Text = duration.ToString("%d") + " days " + duration.ToString(@"hh\:mm\:ss");
-        }
-
-        private void FormWhatRunner_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            formMarathon.Show();
         }
     }
 }
