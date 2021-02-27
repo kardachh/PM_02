@@ -16,5 +16,10 @@ namespace marathon_skills_2021.forms
         {
             InitializeComponent();
         }
+
+        private void buttonBack_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

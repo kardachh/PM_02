@@ -66,6 +66,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="forms\FormAddRunner.resx">
+      <DependentUpon>FormAddRunner.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="forms\FormMarathon.resx">
       <DependentUpon>FormMarathon.cs</DependentUpon>
     </EmbeddedResource>

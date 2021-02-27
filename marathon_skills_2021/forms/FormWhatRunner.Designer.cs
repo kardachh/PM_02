@@ -34,8 +34,8 @@
             this.pictureBoxTimer = new System.Windows.Forms.PictureBox();
             this.labelBefore = new System.Windows.Forms.Label();
             this.labelTimer = new System.Windows.Forms.Label();
-            this.buttonRunner = new System.Windows.Forms.Button();
-            this.buttonSponsor = new System.Windows.Forms.Button();
+            this.buttonShowRunner = new System.Windows.Forms.Button();
+            this.buttonAddNewRunner = new System.Windows.Forms.Button();
             this.buttonBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBackGround)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTimer)).BeginInit();
@@ -95,33 +95,35 @@
             this.labelTimer.TabIndex = 5;
             this.labelTimer.Text = "Timer";
             // 
-            // buttonRunner
+            // buttonShowRunner
             // 
-            this.buttonRunner.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.buttonRunner.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonRunner.Font = new System.Drawing.Font("Rockwell", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonRunner.ForeColor = System.Drawing.Color.White;
-            this.buttonRunner.Location = new System.Drawing.Point(219, 164);
-            this.buttonRunner.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.buttonRunner.Name = "buttonRunner";
-            this.buttonRunner.Size = new System.Drawing.Size(350, 70);
-            this.buttonRunner.TabIndex = 6;
-            this.buttonRunner.Text = "I have previously participated";
-            this.buttonRunner.UseVisualStyleBackColor = false;
+            this.buttonShowRunner.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.buttonShowRunner.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonShowRunner.Font = new System.Drawing.Font("Rockwell", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonShowRunner.ForeColor = System.Drawing.Color.White;
+            this.buttonShowRunner.Location = new System.Drawing.Point(219, 164);
+            this.buttonShowRunner.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonShowRunner.Name = "buttonShowRunner";
+            this.buttonShowRunner.Size = new System.Drawing.Size(350, 70);
+            this.buttonShowRunner.TabIndex = 6;
+            this.buttonShowRunner.Text = "I have previously participated";
+            this.buttonShowRunner.UseVisualStyleBackColor = false;
+            this.buttonShowRunner.Click += new System.EventHandler(this.buttonShowRunner_Click);
             // 
-            // buttonSponsor
+            // buttonAddNewRunner
             // 
-            this.buttonSponsor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.buttonSponsor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSponsor.Font = new System.Drawing.Font("Rockwell", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSponsor.ForeColor = System.Drawing.Color.White;
-            this.buttonSponsor.Location = new System.Drawing.Point(219, 244);
-            this.buttonSponsor.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.buttonSponsor.Name = "buttonSponsor";
-            this.buttonSponsor.Size = new System.Drawing.Size(350, 70);
-            this.buttonSponsor.TabIndex = 7;
-            this.buttonSponsor.Text = "I\'m a new member";
-            this.buttonSponsor.UseVisualStyleBackColor = false;
+            this.buttonAddNewRunner.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.buttonAddNewRunner.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAddNewRunner.Font = new System.Drawing.Font("Rockwell", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAddNewRunner.ForeColor = System.Drawing.Color.White;
+            this.buttonAddNewRunner.Location = new System.Drawing.Point(219, 244);
+            this.buttonAddNewRunner.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonAddNewRunner.Name = "buttonAddNewRunner";
+            this.buttonAddNewRunner.Size = new System.Drawing.Size(350, 70);
+            this.buttonAddNewRunner.TabIndex = 7;
+            this.buttonAddNewRunner.Text = "I\'m a new member";
+            this.buttonAddNewRunner.UseVisualStyleBackColor = false;
+            this.buttonAddNewRunner.Click += new System.EventHandler(this.buttonAddNewRunner_Click);
             // 
             // buttonBack
             // 
@@ -136,6 +138,7 @@
             this.buttonBack.TabIndex = 8;
             this.buttonBack.Text = "< Back";
             this.buttonBack.UseVisualStyleBackColor = false;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // FormWhatRunner
             // 
@@ -143,8 +146,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(774, 501);
             this.Controls.Add(this.buttonBack);
-            this.Controls.Add(this.buttonSponsor);
-            this.Controls.Add(this.buttonRunner);
+            this.Controls.Add(this.buttonAddNewRunner);
+            this.Controls.Add(this.buttonShowRunner);
             this.Controls.Add(this.labelTimer);
             this.Controls.Add(this.labelBefore);
             this.Controls.Add(this.pictureBoxTimer);
@@ -172,8 +175,8 @@
         private System.Windows.Forms.PictureBox pictureBoxTimer;
         private System.Windows.Forms.Label labelBefore;
         private System.Windows.Forms.Label labelTimer;
-        private System.Windows.Forms.Button buttonRunner;
-        private System.Windows.Forms.Button buttonSponsor;
+        private System.Windows.Forms.Button buttonShowRunner;
+        private System.Windows.Forms.Button buttonAddNewRunner;
         private System.Windows.Forms.Button buttonBack;
     }
 }
