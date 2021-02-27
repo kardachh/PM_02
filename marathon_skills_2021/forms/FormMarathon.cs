@@ -36,5 +36,13 @@ namespace marathon_skills_2021
         {
 
         }
+
+        private void timer_Tick(object sender, EventArgs e)
+        {
+            DateTime end = Convert.ToDateTime("8.03.2021 6:00:00");
+            DateTime time =  DateTime.Now;
+            TimeSpan duration = end - time;
+            labelTimer.Text = duration.ToString("%d")+" days "+duration.ToString(@"hh\:mm\:ss");
+        }
     }
 }
