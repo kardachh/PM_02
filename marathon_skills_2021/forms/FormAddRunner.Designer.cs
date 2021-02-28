@@ -58,7 +58,7 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxPhotoFile = new System.Windows.Forms.TextBox();
             this.labelPhotoFile = new System.Windows.Forms.Label();
             this.buttonAddPhoto = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBackGround)).BeginInit();
@@ -313,6 +313,7 @@
             this.buttonRegistration.TabIndex = 23;
             this.buttonRegistration.Text = "Registration";
             this.buttonRegistration.UseVisualStyleBackColor = false;
+            this.buttonRegistration.Click += new System.EventHandler(this.buttonRegistration_Click);
             // 
             // pictureBoxPhoto
             // 
@@ -321,6 +322,7 @@
             this.pictureBoxPhoto.Location = new System.Drawing.Point(664, 181);
             this.pictureBoxPhoto.Name = "pictureBoxPhoto";
             this.pictureBoxPhoto.Size = new System.Drawing.Size(96, 96);
+            this.pictureBoxPhoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxPhoto.TabIndex = 24;
             this.pictureBoxPhoto.TabStop = false;
             // 
@@ -374,17 +376,16 @@
             // openFileDialog
             // 
             this.openFileDialog.FileName = "openFileDialog";
-            this.openFileDialog.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog_FileOk);
             // 
-            // textBox1
+            // textBoxPhotoFile
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(596, 285);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(5);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(137, 23);
-            this.textBox1.TabIndex = 30;
-            this.textBox1.WordWrap = false;
+            this.textBoxPhotoFile.Enabled = false;
+            this.textBoxPhotoFile.Location = new System.Drawing.Point(596, 285);
+            this.textBoxPhotoFile.Margin = new System.Windows.Forms.Padding(5);
+            this.textBoxPhotoFile.Name = "textBoxPhotoFile";
+            this.textBoxPhotoFile.Size = new System.Drawing.Size(137, 23);
+            this.textBoxPhotoFile.TabIndex = 30;
+            this.textBoxPhotoFile.WordWrap = false;
             // 
             // labelPhotoFile
             // 
@@ -421,7 +422,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(774, 501);
             this.Controls.Add(this.buttonAddPhoto);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxPhotoFile);
             this.Controls.Add(this.labelPhotoFile);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label1);
@@ -496,7 +497,7 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.OpenFileDialog openFileDialog;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxPhotoFile;
         private System.Windows.Forms.Label labelPhotoFile;
         private System.Windows.Forms.Button buttonAddPhoto;
     }

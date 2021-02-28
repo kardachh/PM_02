@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace marathon_skills_2021.forms
@@ -35,14 +36,16 @@ namespace marathon_skills_2021.forms
             openFileDialog.CheckFileExists = true;
             openFileDialog.AddExtension = true;
             openFileDialog.Multiselect = true;
+            openFileDialog.Filter = "Image Files(*.BMP; *.JPG; *.GIF)| *.BMP; *.JPG; *.GIF | All files(*.*) | *.*";
 
             if (openFileDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
-                
+                textBoxPhotoFile.Text =  openFileDialog.FileName;
+                pictureBoxPhoto.SizeMode = PictureBoxSizeMode.StretchImage;
+                pictureBoxPhoto.Image = Image.FromFile(openFileDialog.FileName);
             }
         }
-
-        private void openFileDialog_FileOk(object sender, System.ComponentModel.CancelEventArgs e)
+        private void buttonRegistration_Click(object sender, EventArgs e)
         {
 
         }
