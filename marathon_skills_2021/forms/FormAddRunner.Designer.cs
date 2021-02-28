@@ -37,8 +37,33 @@
             this.labelTimer = new System.Windows.Forms.Label();
             this.buttonBack = new System.Windows.Forms.Button();
             this.timer = new System.Windows.Forms.Timer(this.components);
+            this.labelRunnerRegistration = new System.Windows.Forms.Label();
+            this.labelPlease = new System.Windows.Forms.Label();
+            this.labelEmail = new System.Windows.Forms.Label();
+            this.textBoxEmail = new System.Windows.Forms.TextBox();
+            this.textBoxPassword = new System.Windows.Forms.TextBox();
+            this.labelPassword = new System.Windows.Forms.Label();
+            this.textBoxConfirmPassword = new System.Windows.Forms.TextBox();
+            this.labelConfirmPassword = new System.Windows.Forms.Label();
+            this.textBoxFirstName = new System.Windows.Forms.TextBox();
+            this.labelFirstName = new System.Windows.Forms.Label();
+            this.textBoxLastName = new System.Windows.Forms.TextBox();
+            this.labelLastName = new System.Windows.Forms.Label();
+            this.labelGender = new System.Windows.Forms.Label();
+            this.comboBoxGender = new System.Windows.Forms.ComboBox();
+            this.buttonRegistration = new System.Windows.Forms.Button();
+            this.pictureBoxPhoto = new System.Windows.Forms.PictureBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.labelDateOfBirth = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.labelPhotoFile = new System.Windows.Forms.Label();
+            this.buttonAddPhoto = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBackGround)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTimer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPhoto)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBoxBackGround
@@ -96,14 +121,15 @@
             // 
             // buttonBack
             // 
+            this.buttonBack.AutoEllipsis = true;
             this.buttonBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonBack.Font = new System.Drawing.Font("Rockwell", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonBack.ForeColor = System.Drawing.Color.White;
-            this.buttonBack.Location = new System.Drawing.Point(13, 8);
+            this.buttonBack.Location = new System.Drawing.Point(13, 6);
             this.buttonBack.Margin = new System.Windows.Forms.Padding(4);
             this.buttonBack.Name = "buttonBack";
-            this.buttonBack.Size = new System.Drawing.Size(99, 35);
+            this.buttonBack.Size = new System.Drawing.Size(100, 35);
             this.buttonBack.TabIndex = 8;
             this.buttonBack.Text = "< Back";
             this.buttonBack.UseVisualStyleBackColor = false;
@@ -114,11 +140,309 @@
             this.timer.Enabled = true;
             this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
+            // labelRunnerRegistration
+            // 
+            this.labelRunnerRegistration.AutoSize = true;
+            this.labelRunnerRegistration.Font = new System.Drawing.Font("Rockwell", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelRunnerRegistration.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.labelRunnerRegistration.Location = new System.Drawing.Point(267, 53);
+            this.labelRunnerRegistration.Name = "labelRunnerRegistration";
+            this.labelRunnerRegistration.Size = new System.Drawing.Size(250, 31);
+            this.labelRunnerRegistration.TabIndex = 9;
+            this.labelRunnerRegistration.Text = "Runner registration";
+            this.labelRunnerRegistration.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelPlease
+            // 
+            this.labelPlease.AutoSize = true;
+            this.labelPlease.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPlease.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.labelPlease.Location = new System.Drawing.Point(124, 107);
+            this.labelPlease.Name = "labelPlease";
+            this.labelPlease.Size = new System.Drawing.Size(535, 23);
+            this.labelPlease.TabIndex = 10;
+            this.labelPlease.Text = "Please complete all information to register as a runner.";
+            this.labelPlease.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelEmail
+            // 
+            this.labelEmail.AutoSize = true;
+            this.labelEmail.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.labelEmail.Location = new System.Drawing.Point(129, 181);
+            this.labelEmail.Margin = new System.Windows.Forms.Padding(5);
+            this.labelEmail.Name = "labelEmail";
+            this.labelEmail.Size = new System.Drawing.Size(70, 23);
+            this.labelEmail.TabIndex = 11;
+            this.labelEmail.Text = "Email:";
+            this.labelEmail.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // textBoxEmail
+            // 
+            this.textBoxEmail.Location = new System.Drawing.Point(205, 181);
+            this.textBoxEmail.Margin = new System.Windows.Forms.Padding(5);
+            this.textBoxEmail.Name = "textBoxEmail";
+            this.textBoxEmail.Size = new System.Drawing.Size(214, 23);
+            this.textBoxEmail.TabIndex = 12;
+            this.textBoxEmail.WordWrap = false;
+            // 
+            // textBoxPassword
+            // 
+            this.textBoxPassword.Location = new System.Drawing.Point(205, 214);
+            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(5);
+            this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.Size = new System.Drawing.Size(214, 23);
+            this.textBoxPassword.TabIndex = 14;
+            this.textBoxPassword.WordWrap = false;
+            // 
+            // labelPassword
+            // 
+            this.labelPassword.AutoSize = true;
+            this.labelPassword.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.labelPassword.Location = new System.Drawing.Point(90, 214);
+            this.labelPassword.Margin = new System.Windows.Forms.Padding(5);
+            this.labelPassword.Name = "labelPassword";
+            this.labelPassword.Size = new System.Drawing.Size(109, 23);
+            this.labelPassword.TabIndex = 13;
+            this.labelPassword.Text = "Password:";
+            this.labelPassword.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // textBoxConfirmPassword
+            // 
+            this.textBoxConfirmPassword.Location = new System.Drawing.Point(205, 247);
+            this.textBoxConfirmPassword.Margin = new System.Windows.Forms.Padding(5);
+            this.textBoxConfirmPassword.Name = "textBoxConfirmPassword";
+            this.textBoxConfirmPassword.Size = new System.Drawing.Size(214, 23);
+            this.textBoxConfirmPassword.TabIndex = 16;
+            this.textBoxConfirmPassword.WordWrap = false;
+            // 
+            // labelConfirmPassword
+            // 
+            this.labelConfirmPassword.AutoSize = true;
+            this.labelConfirmPassword.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelConfirmPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.labelConfirmPassword.Location = new System.Drawing.Point(5, 245);
+            this.labelConfirmPassword.Margin = new System.Windows.Forms.Padding(5);
+            this.labelConfirmPassword.Name = "labelConfirmPassword";
+            this.labelConfirmPassword.Size = new System.Drawing.Size(194, 23);
+            this.labelConfirmPassword.TabIndex = 15;
+            this.labelConfirmPassword.Text = "Confirm password:";
+            this.labelConfirmPassword.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // textBoxFirstName
+            // 
+            this.textBoxFirstName.Location = new System.Drawing.Point(205, 280);
+            this.textBoxFirstName.Margin = new System.Windows.Forms.Padding(5);
+            this.textBoxFirstName.Name = "textBoxFirstName";
+            this.textBoxFirstName.Size = new System.Drawing.Size(214, 23);
+            this.textBoxFirstName.TabIndex = 18;
+            this.textBoxFirstName.WordWrap = false;
+            // 
+            // labelFirstName
+            // 
+            this.labelFirstName.AutoSize = true;
+            this.labelFirstName.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFirstName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.labelFirstName.Location = new System.Drawing.Point(79, 280);
+            this.labelFirstName.Margin = new System.Windows.Forms.Padding(5);
+            this.labelFirstName.Name = "labelFirstName";
+            this.labelFirstName.Size = new System.Drawing.Size(120, 23);
+            this.labelFirstName.TabIndex = 17;
+            this.labelFirstName.Text = "First Name:";
+            this.labelFirstName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // textBoxLastName
+            // 
+            this.textBoxLastName.Location = new System.Drawing.Point(205, 313);
+            this.textBoxLastName.Margin = new System.Windows.Forms.Padding(5);
+            this.textBoxLastName.Name = "textBoxLastName";
+            this.textBoxLastName.Size = new System.Drawing.Size(214, 23);
+            this.textBoxLastName.TabIndex = 20;
+            this.textBoxLastName.WordWrap = false;
+            // 
+            // labelLastName
+            // 
+            this.labelLastName.AutoSize = true;
+            this.labelLastName.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLastName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.labelLastName.Location = new System.Drawing.Point(84, 313);
+            this.labelLastName.Margin = new System.Windows.Forms.Padding(5);
+            this.labelLastName.Name = "labelLastName";
+            this.labelLastName.Size = new System.Drawing.Size(115, 23);
+            this.labelLastName.TabIndex = 19;
+            this.labelLastName.Text = "Last Name:";
+            this.labelLastName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelGender
+            // 
+            this.labelGender.AutoSize = true;
+            this.labelGender.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelGender.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.labelGender.Location = new System.Drawing.Point(108, 347);
+            this.labelGender.Margin = new System.Windows.Forms.Padding(5);
+            this.labelGender.Name = "labelGender";
+            this.labelGender.Size = new System.Drawing.Size(91, 23);
+            this.labelGender.TabIndex = 21;
+            this.labelGender.Text = "Gender:";
+            this.labelGender.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // comboBoxGender
+            // 
+            this.comboBoxGender.FormattingEnabled = true;
+            this.comboBoxGender.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
+            this.comboBoxGender.Location = new System.Drawing.Point(205, 346);
+            this.comboBoxGender.Margin = new System.Windows.Forms.Padding(5);
+            this.comboBoxGender.Name = "comboBoxGender";
+            this.comboBoxGender.Size = new System.Drawing.Size(214, 24);
+            this.comboBoxGender.TabIndex = 22;
+            // 
+            // buttonRegistration
+            // 
+            this.buttonRegistration.AutoEllipsis = true;
+            this.buttonRegistration.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.buttonRegistration.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonRegistration.Font = new System.Drawing.Font("Rockwell", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonRegistration.ForeColor = System.Drawing.Color.White;
+            this.buttonRegistration.Location = new System.Drawing.Point(289, 393);
+            this.buttonRegistration.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonRegistration.Name = "buttonRegistration";
+            this.buttonRegistration.Size = new System.Drawing.Size(200, 50);
+            this.buttonRegistration.TabIndex = 23;
+            this.buttonRegistration.Text = "Registration";
+            this.buttonRegistration.UseVisualStyleBackColor = false;
+            // 
+            // pictureBoxPhoto
+            // 
+            this.pictureBoxPhoto.BackColor = System.Drawing.Color.White;
+            this.pictureBoxPhoto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBoxPhoto.Location = new System.Drawing.Point(664, 181);
+            this.pictureBoxPhoto.Name = "pictureBoxPhoto";
+            this.pictureBoxPhoto.Size = new System.Drawing.Size(96, 96);
+            this.pictureBoxPhoto.TabIndex = 24;
+            this.pictureBoxPhoto.TabStop = false;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(596, 316);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(5);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(164, 23);
+            this.dateTimePicker1.TabIndex = 25;
+            this.dateTimePicker1.Value = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
+            // 
+            // labelDateOfBirth
+            // 
+            this.labelDateOfBirth.AutoSize = true;
+            this.labelDateOfBirth.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDateOfBirth.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.labelDateOfBirth.Location = new System.Drawing.Point(530, 316);
+            this.labelDateOfBirth.Margin = new System.Windows.Forms.Padding(5);
+            this.labelDateOfBirth.Name = "labelDateOfBirth";
+            this.labelDateOfBirth.Size = new System.Drawing.Size(60, 23);
+            this.labelDateOfBirth.TabIndex = 26;
+            this.labelDateOfBirth.Text = "DOB:";
+            this.labelDateOfBirth.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
+            this.comboBox1.Location = new System.Drawing.Point(596, 349);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(5);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(164, 24);
+            this.comboBox1.TabIndex = 28;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label1.Location = new System.Drawing.Point(495, 349);
+            this.label1.Margin = new System.Windows.Forms.Padding(5);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(95, 23);
+            this.label1.TabIndex = 27;
+            this.label1.Text = "Country:";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // openFileDialog
+            // 
+            this.openFileDialog.FileName = "openFileDialog";
+            this.openFileDialog.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog_FileOk);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Enabled = false;
+            this.textBox1.Location = new System.Drawing.Point(596, 285);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(5);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(137, 23);
+            this.textBox1.TabIndex = 30;
+            this.textBox1.WordWrap = false;
+            // 
+            // labelPhotoFile
+            // 
+            this.labelPhotoFile.AutoSize = true;
+            this.labelPhotoFile.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPhotoFile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.labelPhotoFile.Location = new System.Drawing.Point(479, 285);
+            this.labelPhotoFile.Margin = new System.Windows.Forms.Padding(5);
+            this.labelPhotoFile.Name = "labelPhotoFile";
+            this.labelPhotoFile.Size = new System.Drawing.Size(111, 23);
+            this.labelPhotoFile.TabIndex = 29;
+            this.labelPhotoFile.Text = "Photo File:";
+            this.labelPhotoFile.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // buttonAddPhoto
+            // 
+            this.buttonAddPhoto.AutoEllipsis = true;
+            this.buttonAddPhoto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.buttonAddPhoto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAddPhoto.Font = new System.Drawing.Font("Rockwell", 10F);
+            this.buttonAddPhoto.ForeColor = System.Drawing.Color.White;
+            this.buttonAddPhoto.Location = new System.Drawing.Point(736, 284);
+            this.buttonAddPhoto.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonAddPhoto.Name = "buttonAddPhoto";
+            this.buttonAddPhoto.Size = new System.Drawing.Size(25, 25);
+            this.buttonAddPhoto.TabIndex = 31;
+            this.buttonAddPhoto.Text = "^";
+            this.buttonAddPhoto.UseVisualStyleBackColor = false;
+            this.buttonAddPhoto.Click += new System.EventHandler(this.buttonAddPhoto_Click);
+            // 
             // FormAddRunner
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(774, 501);
+            this.Controls.Add(this.buttonAddPhoto);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.labelPhotoFile);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelDateOfBirth);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.pictureBoxPhoto);
+            this.Controls.Add(this.buttonRegistration);
+            this.Controls.Add(this.comboBoxGender);
+            this.Controls.Add(this.labelGender);
+            this.Controls.Add(this.textBoxLastName);
+            this.Controls.Add(this.labelLastName);
+            this.Controls.Add(this.textBoxFirstName);
+            this.Controls.Add(this.labelFirstName);
+            this.Controls.Add(this.textBoxConfirmPassword);
+            this.Controls.Add(this.labelConfirmPassword);
+            this.Controls.Add(this.textBoxPassword);
+            this.Controls.Add(this.labelPassword);
+            this.Controls.Add(this.textBoxEmail);
+            this.Controls.Add(this.labelEmail);
+            this.Controls.Add(this.labelPlease);
+            this.Controls.Add(this.labelRunnerRegistration);
             this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.labelTimer);
             this.Controls.Add(this.labelBefore);
@@ -132,10 +456,11 @@
             this.MinimumSize = new System.Drawing.Size(790, 540);
             this.Name = "FormAddRunner";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Marathon 2021 - Runner";
+            this.Text = "Marathon 2021 -  New Runner";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormAddRunner_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBackGround)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTimer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPhoto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -150,6 +475,30 @@
         private System.Windows.Forms.Label labelTimer;
         private System.Windows.Forms.Button buttonBack;
         private System.Windows.Forms.Timer timer;
+        private System.Windows.Forms.Label labelRunnerRegistration;
+        private System.Windows.Forms.Label labelPlease;
+        private System.Windows.Forms.Label labelEmail;
+        private System.Windows.Forms.TextBox textBoxEmail;
+        private System.Windows.Forms.TextBox textBoxPassword;
+        private System.Windows.Forms.Label labelPassword;
+        private System.Windows.Forms.TextBox textBoxConfirmPassword;
+        private System.Windows.Forms.Label labelConfirmPassword;
+        private System.Windows.Forms.TextBox textBoxFirstName;
+        private System.Windows.Forms.Label labelFirstName;
+        private System.Windows.Forms.TextBox textBoxLastName;
+        private System.Windows.Forms.Label labelLastName;
+        private System.Windows.Forms.Label labelGender;
+        private System.Windows.Forms.ComboBox comboBoxGender;
+        private System.Windows.Forms.Button buttonRegistration;
+        private System.Windows.Forms.PictureBox pictureBoxPhoto;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label labelDateOfBirth;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label labelPhotoFile;
+        private System.Windows.Forms.Button buttonAddPhoto;
     }
 }
 
