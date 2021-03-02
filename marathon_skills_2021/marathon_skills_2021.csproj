@@ -231,6 +231,7 @@
   <ItemGroup>
     <Content Include="bonus\ecologyrecycle_environment_eco_icon_181686.ico" />
     <Content Include="bonus\triceps_fitness_icon_181746.ico" />
+    <Content Include="bonus\Рисунок2.png" />
     <Content Include="data\Model.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model.edmx</DependentUpon>
