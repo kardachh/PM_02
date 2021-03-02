@@ -53,10 +53,10 @@
             this.comboBoxGender = new System.Windows.Forms.ComboBox();
             this.buttonRegistration = new System.Windows.Forms.Button();
             this.pictureBoxPhoto = new System.Windows.Forms.PictureBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.labelDateOfBirth = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.dateTimePickerDOB = new System.Windows.Forms.DateTimePicker();
+            this.labelDOB = new System.Windows.Forms.Label();
+            this.comboBoxCountry = new System.Windows.Forms.ComboBox();
+            this.labelCountry = new System.Windows.Forms.Label();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.textBoxPhotoFile = new System.Windows.Forms.TextBox();
             this.labelPhotoFile = new System.Windows.Forms.Label();
@@ -326,52 +326,52 @@
             this.pictureBoxPhoto.TabIndex = 24;
             this.pictureBoxPhoto.TabStop = false;
             // 
-            // dateTimePicker1
+            // dateTimePickerDOB
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(596, 316);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(5);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(164, 23);
-            this.dateTimePicker1.TabIndex = 25;
-            this.dateTimePicker1.Value = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
+            this.dateTimePickerDOB.Location = new System.Drawing.Point(596, 316);
+            this.dateTimePickerDOB.Margin = new System.Windows.Forms.Padding(5);
+            this.dateTimePickerDOB.Name = "dateTimePickerDOB";
+            this.dateTimePickerDOB.Size = new System.Drawing.Size(164, 23);
+            this.dateTimePickerDOB.TabIndex = 25;
+            this.dateTimePickerDOB.Value = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
             // 
-            // labelDateOfBirth
+            // labelDOB
             // 
-            this.labelDateOfBirth.AutoSize = true;
-            this.labelDateOfBirth.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDateOfBirth.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.labelDateOfBirth.Location = new System.Drawing.Point(530, 316);
-            this.labelDateOfBirth.Margin = new System.Windows.Forms.Padding(5);
-            this.labelDateOfBirth.Name = "labelDateOfBirth";
-            this.labelDateOfBirth.Size = new System.Drawing.Size(60, 23);
-            this.labelDateOfBirth.TabIndex = 26;
-            this.labelDateOfBirth.Text = "DOB:";
-            this.labelDateOfBirth.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelDOB.AutoSize = true;
+            this.labelDOB.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDOB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.labelDOB.Location = new System.Drawing.Point(530, 316);
+            this.labelDOB.Margin = new System.Windows.Forms.Padding(5);
+            this.labelDOB.Name = "labelDOB";
+            this.labelDOB.Size = new System.Drawing.Size(60, 23);
+            this.labelDOB.TabIndex = 26;
+            this.labelDOB.Text = "DOB:";
+            this.labelDOB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // comboBox1
+            // comboBoxCountry
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.comboBoxCountry.FormattingEnabled = true;
+            this.comboBoxCountry.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.comboBox1.Location = new System.Drawing.Point(596, 349);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(5);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(164, 24);
-            this.comboBox1.TabIndex = 28;
+            this.comboBoxCountry.Location = new System.Drawing.Point(596, 349);
+            this.comboBoxCountry.Margin = new System.Windows.Forms.Padding(5);
+            this.comboBoxCountry.Name = "comboBoxCountry";
+            this.comboBoxCountry.Size = new System.Drawing.Size(164, 24);
+            this.comboBoxCountry.TabIndex = 28;
             // 
-            // label1
+            // labelCountry
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label1.Location = new System.Drawing.Point(495, 349);
-            this.label1.Margin = new System.Windows.Forms.Padding(5);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(95, 23);
-            this.label1.TabIndex = 27;
-            this.label1.Text = "Country:";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelCountry.AutoSize = true;
+            this.labelCountry.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCountry.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.labelCountry.Location = new System.Drawing.Point(495, 349);
+            this.labelCountry.Margin = new System.Windows.Forms.Padding(5);
+            this.labelCountry.Name = "labelCountry";
+            this.labelCountry.Size = new System.Drawing.Size(95, 23);
+            this.labelCountry.TabIndex = 27;
+            this.labelCountry.Text = "Country:";
+            this.labelCountry.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // openFileDialog
             // 
@@ -424,10 +424,10 @@
             this.Controls.Add(this.buttonAddPhoto);
             this.Controls.Add(this.textBoxPhotoFile);
             this.Controls.Add(this.labelPhotoFile);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.labelDateOfBirth);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.comboBoxCountry);
+            this.Controls.Add(this.labelCountry);
+            this.Controls.Add(this.labelDOB);
+            this.Controls.Add(this.dateTimePickerDOB);
             this.Controls.Add(this.pictureBoxPhoto);
             this.Controls.Add(this.buttonRegistration);
             this.Controls.Add(this.comboBoxGender);
@@ -492,10 +492,10 @@
         private System.Windows.Forms.ComboBox comboBoxGender;
         private System.Windows.Forms.Button buttonRegistration;
         private System.Windows.Forms.PictureBox pictureBoxPhoto;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Label labelDateOfBirth;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DateTimePicker dateTimePickerDOB;
+        private System.Windows.Forms.Label labelDOB;
+        private System.Windows.Forms.ComboBox comboBoxCountry;
+        private System.Windows.Forms.Label labelCountry;
         private System.Windows.Forms.OpenFileDialog openFileDialog;
         private System.Windows.Forms.TextBox textBoxPhotoFile;
         private System.Windows.Forms.Label labelPhotoFile;

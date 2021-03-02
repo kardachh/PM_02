@@ -21,11 +21,13 @@ namespace marathon_skills_2021.data
         }
     
         public int StaffId { get; set; }
-        public string FullName { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
         public Nullable<System.DateTime> DateOfBirth { get; set; }
         public string Gender { get; set; }
-        public Nullable<short> PositionId { get; set; }
-        public string EmailAddress { get; set; }
+        public int PositionId { get; set; }
+        public string Email { get; set; }
+        public string Comments { get; set; }
     
         public virtual Position Position { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

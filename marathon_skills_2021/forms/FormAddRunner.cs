@@ -14,6 +14,8 @@ namespace marathon_skills_2021.forms
             buttonBack.Text = "< " + formPrev.Text;
             buttonBack.AutoSize = true;
             timer_Tick(timer, null);
+            ShowCountry();
+            ShowGender();
         }
         private void FormAddRunner_FormClosed(object sender, FormClosedEventArgs e)
         {
@@ -47,7 +49,55 @@ namespace marathon_skills_2021.forms
         }
         private void buttonRegistration_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                if (textBoxFirstName.Text != "" && textBoxEmail.Text != "" && textBoxPassword.Text != "" &&
+                    textBoxConfirmPassword.Text != "" && textBoxLastName.Text != "" && comboBoxGender.SelectedItem != null &&
+                    comboBoxCountry.SelectedItem != null && dateTimePickerDOB.Value != null)
+                {
+                    if (PasswordCheck())
+                    {
+                        data.Runner runner = new data.Runner();
+                        runner.Email = textBoxEmail.Text;
+                        runner.User.Email = textBoxEmail.Text;
+                        runner.User.Password = textBoxPassword.Text;
+                        runner.Gender = comboBoxGender.SelectedItem.ToString();
+                        runner.DateOfBirth = dateTimePickerDOB.Value;
+                        runner.CountryCode = comboBoxCountry.SelectedItem.ToString();
+                        //  Program.marathonSkillsEntities.Runner.Add(runner);
+                        //  Program.marathonSkillsEntities.SaveChanges();
+                    }
+                }
+                else MessageBox.Show("Данные не выбраны", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch { MessageBox.Show("Данные не выбраны", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Information); }
+        }
+        private bool PasswordCheck()
+        {
+            if (textBoxPassword.Text != textBoxConfirmPassword.Text)
+            {
+                MessageBox.Show("Пароли не совпадают!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+            else return true;
+        }
+        void ShowGender()
+        {
+            comboBoxGender.Items.Clear();
+            foreach (data.Gender Gender in Program.marathonSkillsEntities.Gender)
+            {
+                string[] item = { Gender.Gender1 };
+                comboBoxGender.Items.Add(string.Join(" ", item));
+            }
+        }
+        void ShowCountry()
+        {
+            comboBoxCountry.Items.Clear();
+            foreach (data.Country country in Program.marathonSkillsEntities.Country)
+            {
+                string[] item = { country.CountryCode };
+                comboBoxCountry.Items.Add(string.Join(" ", item));
+            }
         }
     }
 }

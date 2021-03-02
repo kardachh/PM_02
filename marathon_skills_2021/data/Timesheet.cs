@@ -14,11 +14,11 @@ namespace marathon_skills_2021.data
     
     public partial class Timesheet
     {
-        public int TimesheetID { get; set; }
-        public Nullable<int> StaffIDNum { get; set; }
+        public int TimesheetId { get; set; }
+        public Nullable<int> StaffId { get; set; }
         public Nullable<System.DateTime> StartDateTime { get; set; }
         public Nullable<System.DateTime> EndDateTime { get; set; }
-        public string PaymentAmount { get; set; }
+        public Nullable<decimal> PayAmount { get; set; }
     
         public virtual Staff Staff { get; set; }
     }

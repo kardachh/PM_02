@@ -37,11 +37,11 @@
             this.labelTimer = new System.Windows.Forms.Label();
             this.buttonBack = new System.Windows.Forms.Button();
             this.timer = new System.Windows.Forms.Timer(this.components);
-            this.labelRunnerRegistration = new System.Windows.Forms.Label();
-            this.labelPlease = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.labelThanks = new System.Windows.Forms.Label();
+            this.labelThanks2 = new System.Windows.Forms.Label();
+            this.labelRunner = new System.Windows.Forms.Label();
+            this.labelCharity = new System.Windows.Forms.Label();
+            this.labelCash = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBackGround)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTimer)).BeginInit();
             this.SuspendLayout();
@@ -119,76 +119,76 @@
             this.timer.Enabled = true;
             this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
-            // labelRunnerRegistration
+            // labelThanks
             // 
-            this.labelRunnerRegistration.AutoSize = true;
-            this.labelRunnerRegistration.Font = new System.Drawing.Font("Rockwell", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelRunnerRegistration.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.labelRunnerRegistration.Location = new System.Drawing.Point(191, 105);
-            this.labelRunnerRegistration.Name = "labelRunnerRegistration";
-            this.labelRunnerRegistration.Size = new System.Drawing.Size(368, 31);
-            this.labelRunnerRegistration.TabIndex = 78;
-            this.labelRunnerRegistration.Text = "Thanks for your sponsorship!";
-            this.labelRunnerRegistration.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelThanks.AutoSize = true;
+            this.labelThanks.Font = new System.Drawing.Font("Rockwell", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelThanks.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.labelThanks.Location = new System.Drawing.Point(191, 105);
+            this.labelThanks.Name = "labelThanks";
+            this.labelThanks.Size = new System.Drawing.Size(368, 31);
+            this.labelThanks.TabIndex = 78;
+            this.labelThanks.Text = "Thanks for your sponsorship!";
+            this.labelThanks.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // labelPlease
+            // labelThanks2
             // 
-            this.labelPlease.AutoSize = true;
-            this.labelPlease.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPlease.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.labelPlease.Location = new System.Drawing.Point(101, 145);
-            this.labelPlease.Name = "labelPlease";
-            this.labelPlease.Size = new System.Drawing.Size(589, 23);
-            this.labelPlease.TabIndex = 79;
-            this.labelPlease.Text = "Thank you for supporting the runner in Marathon Skills 2021!";
-            this.labelPlease.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelThanks2.AutoSize = true;
+            this.labelThanks2.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelThanks2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.labelThanks2.Location = new System.Drawing.Point(101, 145);
+            this.labelThanks2.Name = "labelThanks2";
+            this.labelThanks2.Size = new System.Drawing.Size(589, 23);
+            this.labelThanks2.TabIndex = 79;
+            this.labelThanks2.Text = "Thank you for supporting the runner in Marathon Skills 2021!";
+            this.labelThanks2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label1
+            // labelRunner
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label1.Location = new System.Drawing.Point(252, 181);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 23);
-            this.label1.TabIndex = 80;
-            this.label1.Text = "Runner";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelRunner.AutoSize = true;
+            this.labelRunner.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelRunner.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.labelRunner.Location = new System.Drawing.Point(342, 193);
+            this.labelRunner.Name = "labelRunner";
+            this.labelRunner.Size = new System.Drawing.Size(80, 23);
+            this.labelRunner.TabIndex = 80;
+            this.labelRunner.Text = "Runner";
+            this.labelRunner.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label2
+            // labelCharity
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(252, 220);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 23);
-            this.label2.TabIndex = 81;
-            this.label2.Text = "Charity";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelCharity.AutoSize = true;
+            this.labelCharity.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCharity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.labelCharity.Location = new System.Drawing.Point(340, 229);
+            this.labelCharity.Name = "labelCharity";
+            this.labelCharity.Size = new System.Drawing.Size(82, 23);
+            this.labelCharity.TabIndex = 81;
+            this.labelCharity.Text = "Charity";
+            this.labelCharity.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label3
+            // labelCash
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Rockwell", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label3.Location = new System.Drawing.Point(405, 263);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(31, 32);
-            this.label3.TabIndex = 82;
-            this.label3.Text = "$";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelCash.AutoSize = true;
+            this.labelCash.Font = new System.Drawing.Font("Rockwell", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCash.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.labelCash.Location = new System.Drawing.Point(370, 271);
+            this.labelCash.Name = "labelCash";
+            this.labelCash.Size = new System.Drawing.Size(31, 32);
+            this.labelCash.TabIndex = 82;
+            this.labelCash.Text = "$";
+            this.labelCash.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // FormSponsorConfirm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(774, 501);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.labelPlease);
-            this.Controls.Add(this.labelRunnerRegistration);
+            this.Controls.Add(this.labelCash);
+            this.Controls.Add(this.labelCharity);
+            this.Controls.Add(this.labelRunner);
+            this.Controls.Add(this.labelThanks2);
+            this.Controls.Add(this.labelThanks);
             this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.labelTimer);
             this.Controls.Add(this.labelBefore);
@@ -220,11 +220,11 @@
         private System.Windows.Forms.Label labelTimer;
         private System.Windows.Forms.Button buttonBack;
         private System.Windows.Forms.Timer timer;
-        private System.Windows.Forms.Label labelRunnerRegistration;
-        private System.Windows.Forms.Label labelPlease;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label labelThanks;
+        private System.Windows.Forms.Label labelThanks2;
+        private System.Windows.Forms.Label labelRunner;
+        private System.Windows.Forms.Label labelCharity;
+        private System.Windows.Forms.Label labelCash;
     }
 }
 

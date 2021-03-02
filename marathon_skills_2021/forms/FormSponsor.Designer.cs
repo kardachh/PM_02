@@ -37,30 +37,31 @@
             this.labelTimer = new System.Windows.Forms.Label();
             this.buttonBack = new System.Windows.Forms.Button();
             this.timer = new System.Windows.Forms.Timer(this.components);
-            this.labelRunnerRegistration = new System.Windows.Forms.Label();
+            this.labelRunnerSponsor = new System.Windows.Forms.Label();
             this.labelPlease = new System.Windows.Forms.Label();
-            this.labelGender = new System.Windows.Forms.Label();
-            this.textBoxLastName = new System.Windows.Forms.TextBox();
-            this.labelLastName = new System.Windows.Forms.Label();
-            this.textBoxFirstName = new System.Windows.Forms.TextBox();
-            this.labelFirstName = new System.Windows.Forms.Label();
-            this.textBoxConfirmPassword = new System.Windows.Forms.TextBox();
-            this.labelConfirmPassword = new System.Windows.Forms.Label();
-            this.textBoxPassword = new System.Windows.Forms.TextBox();
-            this.labelPassword = new System.Windows.Forms.Label();
-            this.textBoxEmail = new System.Windows.Forms.TextBox();
-            this.labelEmail = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.labelCVC = new System.Windows.Forms.Label();
+            this.labelValidity = new System.Windows.Forms.Label();
+            this.textBoxCard = new System.Windows.Forms.TextBox();
+            this.labelCard = new System.Windows.Forms.Label();
+            this.textBoxCardOwner = new System.Windows.Forms.TextBox();
+            this.labelCardOwner = new System.Windows.Forms.Label();
+            this.labelRunner = new System.Windows.Forms.Label();
+            this.textBoxName = new System.Windows.Forms.TextBox();
+            this.labelName = new System.Windows.Forms.Label();
+            this.textBoxCVC = new System.Windows.Forms.TextBox();
+            this.labelSponsorInfo = new System.Windows.Forms.Label();
             this.labelCharity = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.buttonRegistration = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.labelNameCharity = new System.Windows.Forms.Label();
+            this.labelDAmount = new System.Windows.Forms.Label();
+            this.labelAmount = new System.Windows.Forms.Label();
+            this.buttonMinus = new System.Windows.Forms.Button();
+            this.buttonPlus = new System.Windows.Forms.Button();
+            this.textBoxCash = new System.Windows.Forms.TextBox();
             this.buttonPay = new System.Windows.Forms.Button();
             this.buttonCancel = new System.Windows.Forms.Button();
+            this.comboBoxRunner = new System.Windows.Forms.ComboBox();
+            this.textBoxYearCard = new System.Windows.Forms.TextBox();
+            this.textBoxMonthCard = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBackGround)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTimer)).BeginInit();
             this.SuspendLayout();
@@ -138,17 +139,17 @@
             this.timer.Enabled = true;
             this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
-            // labelRunnerRegistration
+            // labelRunnerSponsor
             // 
-            this.labelRunnerRegistration.AutoSize = true;
-            this.labelRunnerRegistration.Font = new System.Drawing.Font("Rockwell", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelRunnerRegistration.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.labelRunnerRegistration.Location = new System.Drawing.Point(268, 65);
-            this.labelRunnerRegistration.Name = "labelRunnerRegistration";
-            this.labelRunnerRegistration.Size = new System.Drawing.Size(205, 31);
-            this.labelRunnerRegistration.TabIndex = 10;
-            this.labelRunnerRegistration.Text = "Runner sponsor";
-            this.labelRunnerRegistration.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelRunnerSponsor.AutoSize = true;
+            this.labelRunnerSponsor.Font = new System.Drawing.Font("Rockwell", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelRunnerSponsor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.labelRunnerSponsor.Location = new System.Drawing.Point(268, 65);
+            this.labelRunnerSponsor.Name = "labelRunnerSponsor";
+            this.labelRunnerSponsor.Size = new System.Drawing.Size(205, 31);
+            this.labelRunnerSponsor.TabIndex = 10;
+            this.labelRunnerSponsor.Text = "Runner sponsor";
+            this.labelRunnerSponsor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // labelPlease
             // 
@@ -163,234 +164,218 @@
     "e to sponsor. Thanks for your support of the runners and their charities.";
             this.labelPlease.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // labelGender
+            // labelCVC
             // 
-            this.labelGender.AutoSize = true;
-            this.labelGender.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelGender.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.labelGender.Location = new System.Drawing.Point(102, 373);
-            this.labelGender.Margin = new System.Windows.Forms.Padding(5);
-            this.labelGender.Name = "labelGender";
-            this.labelGender.Size = new System.Drawing.Size(63, 23);
-            this.labelGender.TabIndex = 33;
-            this.labelGender.Text = "CVC:";
-            this.labelGender.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelCVC.AutoSize = true;
+            this.labelCVC.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCVC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.labelCVC.Location = new System.Drawing.Point(102, 373);
+            this.labelCVC.Margin = new System.Windows.Forms.Padding(5);
+            this.labelCVC.Name = "labelCVC";
+            this.labelCVC.Size = new System.Drawing.Size(63, 23);
+            this.labelCVC.TabIndex = 33;
+            this.labelCVC.Text = "CVC:";
+            this.labelCVC.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBoxLastName
+            // labelValidity
             // 
-            this.textBoxLastName.Location = new System.Drawing.Point(175, 342);
-            this.textBoxLastName.Margin = new System.Windows.Forms.Padding(5);
-            this.textBoxLastName.Name = "textBoxLastName";
-            this.textBoxLastName.Size = new System.Drawing.Size(214, 23);
-            this.textBoxLastName.TabIndex = 32;
-            this.textBoxLastName.WordWrap = false;
+            this.labelValidity.AutoSize = true;
+            this.labelValidity.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelValidity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.labelValidity.Location = new System.Drawing.Point(74, 342);
+            this.labelValidity.Margin = new System.Windows.Forms.Padding(5);
+            this.labelValidity.Name = "labelValidity";
+            this.labelValidity.Size = new System.Drawing.Size(91, 23);
+            this.labelValidity.TabIndex = 31;
+            this.labelValidity.Text = "Validity:";
+            this.labelValidity.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // labelLastName
+            // textBoxCard
             // 
-            this.labelLastName.AutoSize = true;
-            this.labelLastName.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelLastName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.labelLastName.Location = new System.Drawing.Point(74, 342);
-            this.labelLastName.Margin = new System.Windows.Forms.Padding(5);
-            this.labelLastName.Name = "labelLastName";
-            this.labelLastName.Size = new System.Drawing.Size(91, 23);
-            this.labelLastName.TabIndex = 31;
-            this.labelLastName.Text = "Validity:";
-            this.labelLastName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.textBoxCard.Location = new System.Drawing.Point(175, 309);
+            this.textBoxCard.Margin = new System.Windows.Forms.Padding(5);
+            this.textBoxCard.Name = "textBoxCard";
+            this.textBoxCard.Size = new System.Drawing.Size(214, 23);
+            this.textBoxCard.TabIndex = 30;
+            this.textBoxCard.WordWrap = false;
             // 
-            // textBoxFirstName
+            // labelCard
             // 
-            this.textBoxFirstName.Location = new System.Drawing.Point(175, 309);
-            this.textBoxFirstName.Margin = new System.Windows.Forms.Padding(5);
-            this.textBoxFirstName.Name = "textBoxFirstName";
-            this.textBoxFirstName.Size = new System.Drawing.Size(214, 23);
-            this.textBoxFirstName.TabIndex = 30;
-            this.textBoxFirstName.WordWrap = false;
+            this.labelCard.AutoSize = true;
+            this.labelCard.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCard.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.labelCard.Location = new System.Drawing.Point(9, 309);
+            this.labelCard.Margin = new System.Windows.Forms.Padding(5);
+            this.labelCard.Name = "labelCard";
+            this.labelCard.Size = new System.Drawing.Size(160, 23);
+            this.labelCard.TabIndex = 29;
+            this.labelCard.Text = "Card number#:";
+            this.labelCard.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // labelFirstName
+            // textBoxCardOwner
             // 
-            this.labelFirstName.AutoSize = true;
-            this.labelFirstName.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFirstName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.labelFirstName.Location = new System.Drawing.Point(9, 309);
-            this.labelFirstName.Margin = new System.Windows.Forms.Padding(5);
-            this.labelFirstName.Name = "labelFirstName";
-            this.labelFirstName.Size = new System.Drawing.Size(160, 23);
-            this.labelFirstName.TabIndex = 29;
-            this.labelFirstName.Text = "Card number#:";
-            this.labelFirstName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.textBoxCardOwner.Location = new System.Drawing.Point(175, 276);
+            this.textBoxCardOwner.Margin = new System.Windows.Forms.Padding(5);
+            this.textBoxCardOwner.Name = "textBoxCardOwner";
+            this.textBoxCardOwner.Size = new System.Drawing.Size(214, 23);
+            this.textBoxCardOwner.TabIndex = 28;
+            this.textBoxCardOwner.WordWrap = false;
             // 
-            // textBoxConfirmPassword
+            // labelCardOwner
             // 
-            this.textBoxConfirmPassword.Location = new System.Drawing.Point(175, 276);
-            this.textBoxConfirmPassword.Margin = new System.Windows.Forms.Padding(5);
-            this.textBoxConfirmPassword.Name = "textBoxConfirmPassword";
-            this.textBoxConfirmPassword.Size = new System.Drawing.Size(214, 23);
-            this.textBoxConfirmPassword.TabIndex = 28;
-            this.textBoxConfirmPassword.WordWrap = false;
+            this.labelCardOwner.AutoSize = true;
+            this.labelCardOwner.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCardOwner.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.labelCardOwner.Location = new System.Drawing.Point(44, 276);
+            this.labelCardOwner.Margin = new System.Windows.Forms.Padding(5);
+            this.labelCardOwner.Name = "labelCardOwner";
+            this.labelCardOwner.Size = new System.Drawing.Size(126, 23);
+            this.labelCardOwner.TabIndex = 27;
+            this.labelCardOwner.Text = "Cardowner:";
+            this.labelCardOwner.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // labelConfirmPassword
+            // labelRunner
             // 
-            this.labelConfirmPassword.AutoSize = true;
-            this.labelConfirmPassword.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelConfirmPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.labelConfirmPassword.Location = new System.Drawing.Point(44, 276);
-            this.labelConfirmPassword.Margin = new System.Windows.Forms.Padding(5);
-            this.labelConfirmPassword.Name = "labelConfirmPassword";
-            this.labelConfirmPassword.Size = new System.Drawing.Size(126, 23);
-            this.labelConfirmPassword.TabIndex = 27;
-            this.labelConfirmPassword.Text = "Cardowner:";
-            this.labelConfirmPassword.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelRunner.AutoSize = true;
+            this.labelRunner.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelRunner.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.labelRunner.Location = new System.Drawing.Point(79, 243);
+            this.labelRunner.Margin = new System.Windows.Forms.Padding(5);
+            this.labelRunner.Name = "labelRunner";
+            this.labelRunner.Size = new System.Drawing.Size(86, 23);
+            this.labelRunner.TabIndex = 25;
+            this.labelRunner.Text = "Runner:";
+            this.labelRunner.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBoxPassword
+            // textBoxName
             // 
-            this.textBoxPassword.Location = new System.Drawing.Point(175, 243);
-            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(5);
-            this.textBoxPassword.Name = "textBoxPassword";
-            this.textBoxPassword.Size = new System.Drawing.Size(214, 23);
-            this.textBoxPassword.TabIndex = 26;
-            this.textBoxPassword.WordWrap = false;
+            this.textBoxName.Location = new System.Drawing.Point(175, 210);
+            this.textBoxName.Margin = new System.Windows.Forms.Padding(5);
+            this.textBoxName.Name = "textBoxName";
+            this.textBoxName.Size = new System.Drawing.Size(214, 23);
+            this.textBoxName.TabIndex = 24;
+            this.textBoxName.WordWrap = false;
             // 
-            // labelPassword
+            // labelName
             // 
-            this.labelPassword.AutoSize = true;
-            this.labelPassword.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.labelPassword.Location = new System.Drawing.Point(79, 243);
-            this.labelPassword.Margin = new System.Windows.Forms.Padding(5);
-            this.labelPassword.Name = "labelPassword";
-            this.labelPassword.Size = new System.Drawing.Size(86, 23);
-            this.labelPassword.TabIndex = 25;
-            this.labelPassword.Text = "Runner:";
-            this.labelPassword.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelName.AutoSize = true;
+            this.labelName.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.labelName.Location = new System.Drawing.Point(41, 210);
+            this.labelName.Margin = new System.Windows.Forms.Padding(5);
+            this.labelName.Name = "labelName";
+            this.labelName.Size = new System.Drawing.Size(124, 23);
+            this.labelName.TabIndex = 23;
+            this.labelName.Text = "Your Name:";
+            this.labelName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBoxEmail
+            // textBoxCVC
             // 
-            this.textBoxEmail.Location = new System.Drawing.Point(175, 210);
-            this.textBoxEmail.Margin = new System.Windows.Forms.Padding(5);
-            this.textBoxEmail.Name = "textBoxEmail";
-            this.textBoxEmail.Size = new System.Drawing.Size(214, 23);
-            this.textBoxEmail.TabIndex = 24;
-            this.textBoxEmail.WordWrap = false;
+            this.textBoxCVC.Location = new System.Drawing.Point(175, 373);
+            this.textBoxCVC.Margin = new System.Windows.Forms.Padding(5);
+            this.textBoxCVC.Name = "textBoxCVC";
+            this.textBoxCVC.Size = new System.Drawing.Size(214, 23);
+            this.textBoxCVC.TabIndex = 32;
+            this.textBoxCVC.WordWrap = false;
             // 
-            // labelEmail
+            // labelSponsorInfo
             // 
-            this.labelEmail.AutoSize = true;
-            this.labelEmail.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.labelEmail.Location = new System.Drawing.Point(41, 210);
-            this.labelEmail.Margin = new System.Windows.Forms.Padding(5);
-            this.labelEmail.Name = "labelEmail";
-            this.labelEmail.Size = new System.Drawing.Size(124, 23);
-            this.labelEmail.TabIndex = 23;
-            this.labelEmail.Text = "Your Name:";
-            this.labelEmail.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(175, 373);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(5);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(214, 23);
-            this.textBox1.TabIndex = 32;
-            this.textBox1.WordWrap = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Rockwell", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Gray;
-            this.label1.Location = new System.Drawing.Point(101, 169);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(237, 27);
-            this.label1.TabIndex = 34;
-            this.label1.Text = "Sponsor Information";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Rockwell", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Gray;
-            this.label2.Location = new System.Drawing.Point(574, 169);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(95, 27);
-            this.label2.TabIndex = 35;
-            this.label2.Text = "Charity";
+            this.labelSponsorInfo.AutoSize = true;
+            this.labelSponsorInfo.Font = new System.Drawing.Font("Rockwell", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSponsorInfo.ForeColor = System.Drawing.Color.Gray;
+            this.labelSponsorInfo.Location = new System.Drawing.Point(101, 169);
+            this.labelSponsorInfo.Name = "labelSponsorInfo";
+            this.labelSponsorInfo.Size = new System.Drawing.Size(237, 27);
+            this.labelSponsorInfo.TabIndex = 34;
+            this.labelSponsorInfo.Text = "Sponsor Information";
             // 
             // labelCharity
             // 
             this.labelCharity.AutoSize = true;
-            this.labelCharity.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCharity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.labelCharity.Location = new System.Drawing.Point(580, 210);
-            this.labelCharity.Margin = new System.Windows.Forms.Padding(5);
+            this.labelCharity.Font = new System.Drawing.Font("Rockwell", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCharity.ForeColor = System.Drawing.Color.Gray;
+            this.labelCharity.Location = new System.Drawing.Point(560, 169);
             this.labelCharity.Name = "labelCharity";
-            this.labelCharity.Size = new System.Drawing.Size(82, 23);
-            this.labelCharity.TabIndex = 36;
+            this.labelCharity.Size = new System.Drawing.Size(95, 27);
+            this.labelCharity.TabIndex = 35;
             this.labelCharity.Text = "Charity";
-            this.labelCharity.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label3
+            // labelNameCharity
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Rockwell", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Gray;
-            this.label3.Location = new System.Drawing.Point(512, 243);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(202, 27);
-            this.label3.TabIndex = 37;
-            this.label3.Text = "Donation amount";
+            this.labelNameCharity.AutoSize = true;
+            this.labelNameCharity.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNameCharity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.labelNameCharity.Location = new System.Drawing.Point(546, 208);
+            this.labelNameCharity.Margin = new System.Windows.Forms.Padding(5);
+            this.labelNameCharity.Name = "labelNameCharity";
+            this.labelNameCharity.Size = new System.Drawing.Size(142, 23);
+            this.labelNameCharity.TabIndex = 36;
+            this.labelNameCharity.Text = "House of Cats";
+            this.labelNameCharity.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label4
+            // labelDAmount
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Rockwell", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Gray;
-            this.label4.Location = new System.Drawing.Point(577, 276);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(78, 42);
-            this.label4.TabIndex = 38;
-            this.label4.Text = "$50";
+            this.labelDAmount.AutoSize = true;
+            this.labelDAmount.Font = new System.Drawing.Font("Rockwell", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDAmount.ForeColor = System.Drawing.Color.Gray;
+            this.labelDAmount.Location = new System.Drawing.Point(512, 243);
+            this.labelDAmount.Name = "labelDAmount";
+            this.labelDAmount.Size = new System.Drawing.Size(202, 27);
+            this.labelDAmount.TabIndex = 37;
+            this.labelDAmount.Text = "Donation amount";
             // 
-            // buttonRegistration
+            // labelAmount
             // 
-            this.buttonRegistration.AutoEllipsis = true;
-            this.buttonRegistration.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.buttonRegistration.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonRegistration.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonRegistration.ForeColor = System.Drawing.Color.White;
-            this.buttonRegistration.Location = new System.Drawing.Point(509, 340);
-            this.buttonRegistration.Margin = new System.Windows.Forms.Padding(4);
-            this.buttonRegistration.Name = "buttonRegistration";
-            this.buttonRegistration.Size = new System.Drawing.Size(34, 34);
-            this.buttonRegistration.TabIndex = 39;
-            this.buttonRegistration.Text = "-";
-            this.buttonRegistration.UseVisualStyleBackColor = false;
+            this.labelAmount.AutoSize = true;
+            this.labelAmount.Font = new System.Drawing.Font("Rockwell", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAmount.ForeColor = System.Drawing.Color.Gray;
+            this.labelAmount.Location = new System.Drawing.Point(577, 276);
+            this.labelAmount.Name = "labelAmount";
+            this.labelAmount.Size = new System.Drawing.Size(78, 42);
+            this.labelAmount.TabIndex = 38;
+            this.labelAmount.Text = "$50";
             // 
-            // button1
+            // buttonMinus
             // 
-            this.button1.AutoEllipsis = true;
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(689, 340);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(34, 34);
-            this.button1.TabIndex = 40;
-            this.button1.Text = "+";
-            this.button1.UseVisualStyleBackColor = false;
+            this.buttonMinus.AutoEllipsis = true;
+            this.buttonMinus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.buttonMinus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonMinus.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonMinus.ForeColor = System.Drawing.Color.White;
+            this.buttonMinus.Location = new System.Drawing.Point(509, 340);
+            this.buttonMinus.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonMinus.Name = "buttonMinus";
+            this.buttonMinus.Size = new System.Drawing.Size(34, 34);
+            this.buttonMinus.TabIndex = 39;
+            this.buttonMinus.Text = "-";
+            this.buttonMinus.UseVisualStyleBackColor = false;
+            this.buttonMinus.Click += new System.EventHandler(this.buttonMinus_Click);
             // 
-            // textBox2
+            // buttonPlus
             // 
-            this.textBox2.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(550, 342);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(132, 32);
-            this.textBox2.TabIndex = 41;
-            this.textBox2.Text = "50";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.buttonPlus.AutoEllipsis = true;
+            this.buttonPlus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.buttonPlus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonPlus.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonPlus.ForeColor = System.Drawing.Color.White;
+            this.buttonPlus.Location = new System.Drawing.Point(689, 340);
+            this.buttonPlus.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonPlus.Name = "buttonPlus";
+            this.buttonPlus.Size = new System.Drawing.Size(34, 34);
+            this.buttonPlus.TabIndex = 40;
+            this.buttonPlus.Text = "+";
+            this.buttonPlus.UseVisualStyleBackColor = false;
+            this.buttonPlus.Click += new System.EventHandler(this.buttonPlus_Click);
+            // 
+            // textBoxCash
+            // 
+            this.textBoxCash.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxCash.Location = new System.Drawing.Point(550, 341);
+            this.textBoxCash.Name = "textBoxCash";
+            this.textBoxCash.Size = new System.Drawing.Size(132, 32);
+            this.textBoxCash.TabIndex = 41;
+            this.textBoxCash.Text = "50";
+            this.textBoxCash.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // buttonPay
             // 
@@ -424,35 +409,63 @@
             this.buttonCancel.UseVisualStyleBackColor = false;
             this.buttonCancel.Click += new System.EventHandler(this.buttonBack_Click);
             // 
+            // comboBoxRunner
+            // 
+            this.comboBoxRunner.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxRunner.FormattingEnabled = true;
+            this.comboBoxRunner.Location = new System.Drawing.Point(175, 243);
+            this.comboBoxRunner.Name = "comboBoxRunner";
+            this.comboBoxRunner.Size = new System.Drawing.Size(214, 24);
+            this.comboBoxRunner.TabIndex = 44;
+            // 
+            // textBoxYearCard
+            // 
+            this.textBoxYearCard.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxYearCard.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.textBoxYearCard.Location = new System.Drawing.Point(218, 342);
+            this.textBoxYearCard.Name = "textBoxYearCard";
+            this.textBoxYearCard.Size = new System.Drawing.Size(65, 23);
+            this.textBoxYearCard.TabIndex = 46;
+            // 
+            // textBoxMonthCard
+            // 
+            this.textBoxMonthCard.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxMonthCard.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.textBoxMonthCard.Location = new System.Drawing.Point(175, 342);
+            this.textBoxMonthCard.Name = "textBoxMonthCard";
+            this.textBoxMonthCard.Size = new System.Drawing.Size(37, 23);
+            this.textBoxMonthCard.TabIndex = 45;
+            // 
             // FormSponsor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(774, 501);
+            this.Controls.Add(this.textBoxYearCard);
+            this.Controls.Add(this.textBoxMonthCard);
+            this.Controls.Add(this.comboBoxRunner);
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.buttonPay);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.buttonRegistration);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.textBoxCash);
+            this.Controls.Add(this.buttonPlus);
+            this.Controls.Add(this.buttonMinus);
+            this.Controls.Add(this.labelAmount);
+            this.Controls.Add(this.labelDAmount);
+            this.Controls.Add(this.labelNameCharity);
             this.Controls.Add(this.labelCharity);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.labelGender);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.textBoxLastName);
-            this.Controls.Add(this.labelLastName);
-            this.Controls.Add(this.textBoxFirstName);
-            this.Controls.Add(this.labelFirstName);
-            this.Controls.Add(this.textBoxConfirmPassword);
-            this.Controls.Add(this.labelConfirmPassword);
-            this.Controls.Add(this.textBoxPassword);
-            this.Controls.Add(this.labelPassword);
-            this.Controls.Add(this.textBoxEmail);
-            this.Controls.Add(this.labelEmail);
+            this.Controls.Add(this.labelSponsorInfo);
+            this.Controls.Add(this.labelCVC);
+            this.Controls.Add(this.textBoxCVC);
+            this.Controls.Add(this.labelValidity);
+            this.Controls.Add(this.textBoxCard);
+            this.Controls.Add(this.labelCard);
+            this.Controls.Add(this.textBoxCardOwner);
+            this.Controls.Add(this.labelCardOwner);
+            this.Controls.Add(this.labelRunner);
+            this.Controls.Add(this.textBoxName);
+            this.Controls.Add(this.labelName);
             this.Controls.Add(this.labelPlease);
-            this.Controls.Add(this.labelRunnerRegistration);
+            this.Controls.Add(this.labelRunnerSponsor);
             this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.labelTimer);
             this.Controls.Add(this.labelBefore);
@@ -484,30 +497,31 @@
         private System.Windows.Forms.Label labelTimer;
         private System.Windows.Forms.Button buttonBack;
         private System.Windows.Forms.Timer timer;
-        private System.Windows.Forms.Label labelRunnerRegistration;
+        private System.Windows.Forms.Label labelRunnerSponsor;
         private System.Windows.Forms.Label labelPlease;
-        private System.Windows.Forms.Label labelGender;
-        private System.Windows.Forms.TextBox textBoxLastName;
-        private System.Windows.Forms.Label labelLastName;
-        private System.Windows.Forms.TextBox textBoxFirstName;
-        private System.Windows.Forms.Label labelFirstName;
-        private System.Windows.Forms.TextBox textBoxConfirmPassword;
-        private System.Windows.Forms.Label labelConfirmPassword;
-        private System.Windows.Forms.TextBox textBoxPassword;
-        private System.Windows.Forms.Label labelPassword;
-        private System.Windows.Forms.TextBox textBoxEmail;
-        private System.Windows.Forms.Label labelEmail;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelCVC;
+        private System.Windows.Forms.Label labelValidity;
+        private System.Windows.Forms.TextBox textBoxCard;
+        private System.Windows.Forms.Label labelCard;
+        private System.Windows.Forms.TextBox textBoxCardOwner;
+        private System.Windows.Forms.Label labelCardOwner;
+        private System.Windows.Forms.Label labelRunner;
+        private System.Windows.Forms.TextBox textBoxName;
+        private System.Windows.Forms.Label labelName;
+        private System.Windows.Forms.TextBox textBoxCVC;
+        private System.Windows.Forms.Label labelSponsorInfo;
         private System.Windows.Forms.Label labelCharity;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button buttonRegistration;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label labelNameCharity;
+        private System.Windows.Forms.Label labelDAmount;
+        private System.Windows.Forms.Label labelAmount;
+        private System.Windows.Forms.Button buttonMinus;
+        private System.Windows.Forms.Button buttonPlus;
+        private System.Windows.Forms.TextBox textBoxCash;
         private System.Windows.Forms.Button buttonPay;
         private System.Windows.Forms.Button buttonCancel;
+        private System.Windows.Forms.TextBox textBoxYearCard;
+        private System.Windows.Forms.TextBox textBoxMonthCard;
+        public System.Windows.Forms.ComboBox comboBoxRunner;
     }
 }
 

@@ -18,5 +18,7 @@ namespace marathon_skills_2021.data
         public string SponsorName { get; set; }
         public int RegistrationId { get; set; }
         public decimal Amount { get; set; }
+    
+        public virtual Registration Registration { get; set; }
     }
 }

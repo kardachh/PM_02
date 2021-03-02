@@ -5,7 +5,7 @@ namespace marathon_skills_2021
 {
     static class Program
     {
-        public static data.MarathonSkillsEntities RBS_Project = new data.MarathonSkillsEntities();
+        public static data.MarathonEntities marathonSkillsEntities = new data.MarathonEntities();
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>

@@ -124,7 +124,7 @@
             this.labelRunnerRegistration.AutoSize = true;
             this.labelRunnerRegistration.Font = new System.Drawing.Font("Rockwell", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelRunnerRegistration.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.labelRunnerRegistration.Location = new System.Drawing.Point(314, 119);
+            this.labelRunnerRegistration.Location = new System.Drawing.Point(304, 138);
             this.labelRunnerRegistration.Name = "labelRunnerRegistration";
             this.labelRunnerRegistration.Size = new System.Drawing.Size(172, 31);
             this.labelRunnerRegistration.TabIndex = 94;

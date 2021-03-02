@@ -6,10 +6,13 @@ namespace marathon_skills_2021.forms
     public partial class FormSponsorConfirm : Form
     {
         private Form formPrev;
-        public FormSponsorConfirm(Form formPrev)
+        public FormSponsorConfirm(Form formPrev, string[] info)
         {
             InitializeComponent();
             this.formPrev = formPrev;
+            labelRunner.Text = info[0];
+            labelCash.Text = "$" + info[2];
+            labelCharity.Text = info[1];
             buttonBack.Text = "< " + formPrev.Text;
             buttonBack.AutoSize = true;
             timer_Tick(timer, null);

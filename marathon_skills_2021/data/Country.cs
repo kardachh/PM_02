@@ -17,6 +17,7 @@ namespace marathon_skills_2021.data
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Country()
         {
+            this.Marathon = new HashSet<Marathon>();
             this.Runner = new HashSet<Runner>();
             this.Volunteer = new HashSet<Volunteer>();
         }
@@ -25,6 +26,8 @@ namespace marathon_skills_2021.data
         public string CountryName { get; set; }
         public string CountryFlag { get; set; }
     
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Marathon> Marathon { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Runner> Runner { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
