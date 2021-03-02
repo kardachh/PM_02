@@ -1,6 +1,6 @@
 ﻿namespace marathon_skills_2021.forms
 {
-    partial class FormAuth
+    partial class FormListOfCharities
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAuth));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormListOfCharities));
             this.pictureBoxBackGround = new System.Windows.Forms.PictureBox();
             this.labelMarathon = new System.Windows.Forms.Label();
             this.pictureBoxTimer = new System.Windows.Forms.PictureBox();
@@ -37,13 +37,6 @@
             this.labelTimer = new System.Windows.Forms.Label();
             this.buttonBack = new System.Windows.Forms.Button();
             this.timer = new System.Windows.Forms.Timer(this.components);
-            this.labelPlease = new System.Windows.Forms.Label();
-            this.textBoxPassword = new System.Windows.Forms.TextBox();
-            this.labelPassword = new System.Windows.Forms.Label();
-            this.textBoxEmail = new System.Windows.Forms.TextBox();
-            this.labelEmail = new System.Windows.Forms.Label();
-            this.buttonCancel = new System.Windows.Forms.Button();
-            this.buttonLogin = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBackGround)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTimer)).BeginInit();
             this.SuspendLayout();
@@ -121,105 +114,11 @@
             this.timer.Enabled = true;
             this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
-            // labelPlease
-            // 
-            this.labelPlease.AutoSize = true;
-            this.labelPlease.BackColor = System.Drawing.SystemColors.Control;
-            this.labelPlease.Font = new System.Drawing.Font("Rockwell", 15.75F);
-            this.labelPlease.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.labelPlease.Location = new System.Drawing.Point(133, 135);
-            this.labelPlease.Name = "labelPlease";
-            this.labelPlease.Size = new System.Drawing.Size(512, 23);
-            this.labelPlease.TabIndex = 76;
-            this.labelPlease.Text = "Please log in to the system using your email address";
-            this.labelPlease.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // textBoxPassword
-            // 
-            this.textBoxPassword.Location = new System.Drawing.Point(298, 233);
-            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(5);
-            this.textBoxPassword.Name = "textBoxPassword";
-            this.textBoxPassword.Size = new System.Drawing.Size(214, 23);
-            this.textBoxPassword.TabIndex = 81;
-            this.textBoxPassword.WordWrap = false;
-            // 
-            // labelPassword
-            // 
-            this.labelPassword.AutoSize = true;
-            this.labelPassword.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.labelPassword.Location = new System.Drawing.Point(183, 233);
-            this.labelPassword.Margin = new System.Windows.Forms.Padding(5);
-            this.labelPassword.Name = "labelPassword";
-            this.labelPassword.Size = new System.Drawing.Size(109, 23);
-            this.labelPassword.TabIndex = 80;
-            this.labelPassword.Text = "Password:";
-            this.labelPassword.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // textBoxEmail
-            // 
-            this.textBoxEmail.Location = new System.Drawing.Point(298, 200);
-            this.textBoxEmail.Margin = new System.Windows.Forms.Padding(5);
-            this.textBoxEmail.Name = "textBoxEmail";
-            this.textBoxEmail.Size = new System.Drawing.Size(214, 23);
-            this.textBoxEmail.TabIndex = 79;
-            this.textBoxEmail.WordWrap = false;
-            // 
-            // labelEmail
-            // 
-            this.labelEmail.AutoSize = true;
-            this.labelEmail.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.labelEmail.Location = new System.Drawing.Point(222, 200);
-            this.labelEmail.Margin = new System.Windows.Forms.Padding(5);
-            this.labelEmail.Name = "labelEmail";
-            this.labelEmail.Size = new System.Drawing.Size(70, 23);
-            this.labelEmail.TabIndex = 78;
-            this.labelEmail.Text = "Email:";
-            this.labelEmail.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // buttonCancel
-            // 
-            this.buttonCancel.AutoEllipsis = true;
-            this.buttonCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.buttonCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCancel.Font = new System.Drawing.Font("Rockwell", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCancel.ForeColor = System.Drawing.Color.White;
-            this.buttonCancel.Location = new System.Drawing.Point(385, 285);
-            this.buttonCancel.Margin = new System.Windows.Forms.Padding(4);
-            this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.Size = new System.Drawing.Size(146, 37);
-            this.buttonCancel.TabIndex = 83;
-            this.buttonCancel.Text = "Cancel";
-            this.buttonCancel.UseVisualStyleBackColor = false;
-            // 
-            // buttonLogin
-            // 
-            this.buttonLogin.AutoEllipsis = true;
-            this.buttonLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.buttonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonLogin.Font = new System.Drawing.Font("Rockwell", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonLogin.ForeColor = System.Drawing.Color.White;
-            this.buttonLogin.Location = new System.Drawing.Point(231, 285);
-            this.buttonLogin.Margin = new System.Windows.Forms.Padding(4);
-            this.buttonLogin.Name = "buttonLogin";
-            this.buttonLogin.Size = new System.Drawing.Size(146, 37);
-            this.buttonLogin.TabIndex = 82;
-            this.buttonLogin.Text = "Login";
-            this.buttonLogin.UseVisualStyleBackColor = false;
-            // 
-            // FormAuth
+            // FormListOfCharities
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(774, 501);
-            this.Controls.Add(this.buttonCancel);
-            this.Controls.Add(this.buttonLogin);
-            this.Controls.Add(this.textBoxPassword);
-            this.Controls.Add(this.labelPassword);
-            this.Controls.Add(this.textBoxEmail);
-            this.Controls.Add(this.labelEmail);
-            this.Controls.Add(this.labelPlease);
             this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.labelTimer);
             this.Controls.Add(this.labelBefore);
@@ -231,10 +130,10 @@
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(790, 540);
             this.MinimumSize = new System.Drawing.Size(790, 540);
-            this.Name = "FormAuth";
+            this.Name = "FormListOfCharities";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Marathon 2021 - Authorization";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormAuth_FormClosed);
+            this.Text = "Marathon 2021 - List of Charities";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormAbout_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBackGround)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTimer)).EndInit();
             this.ResumeLayout(false);
@@ -251,13 +150,7 @@
         private System.Windows.Forms.Label labelTimer;
         private System.Windows.Forms.Button buttonBack;
         private System.Windows.Forms.Timer timer;
-        private System.Windows.Forms.Label labelPlease;
-        private System.Windows.Forms.TextBox textBoxPassword;
-        private System.Windows.Forms.Label labelPassword;
-        private System.Windows.Forms.TextBox textBoxEmail;
-        private System.Windows.Forms.Label labelEmail;
-        private System.Windows.Forms.Button buttonCancel;
-        private System.Windows.Forms.Button buttonLogin;
     }
 }
+
 

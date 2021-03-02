@@ -85,6 +85,12 @@
     <Compile Include="forms\FormAuth.Designer.cs">
       <DependentUpon>FormAuth.cs</DependentUpon>
     </Compile>
+    <Compile Include="forms\FormListOfCharities.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FormListOfCharities.Designer.cs">
+      <DependentUpon>FormListOfCharities.cs</DependentUpon>
+    </Compile>
     <Compile Include="forms\FormMarathon.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +102,12 @@
     </Compile>
     <Compile Include="forms\FormSponsor.Designer.cs">
       <DependentUpon>FormSponsor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\FormSponsorConfirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FormSponsorConfirm.Designer.cs">
+      <DependentUpon>FormSponsorConfirm.cs</DependentUpon>
     </Compile>
     <Compile Include="forms\FormWhatRunner.cs">
       <SubType>Form</SubType>
@@ -171,11 +183,17 @@
     <EmbeddedResource Include="forms\FormAuth.resx">
       <DependentUpon>FormAuth.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="forms\FormListOfCharities.resx">
+      <DependentUpon>FormListOfCharities.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="forms\FormMarathon.resx">
       <DependentUpon>FormMarathon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\FormSponsor.resx">
       <DependentUpon>FormSponsor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FormSponsorConfirm.resx">
+      <DependentUpon>FormSponsorConfirm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\FormWhatRunner.resx">
       <DependentUpon>FormWhatRunner.cs</DependentUpon>

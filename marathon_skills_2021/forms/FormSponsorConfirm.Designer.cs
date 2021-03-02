@@ -1,6 +1,6 @@
 ﻿namespace marathon_skills_2021.forms
 {
-    partial class FormAbout
+    partial class FormSponsorConfirm
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAbout));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormSponsorConfirm));
             this.pictureBoxBackGround = new System.Windows.Forms.PictureBox();
             this.labelMarathon = new System.Windows.Forms.Label();
             this.pictureBoxTimer = new System.Windows.Forms.PictureBox();
@@ -38,12 +38,10 @@
             this.buttonBack = new System.Windows.Forms.Button();
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.labelRunnerRegistration = new System.Windows.Forms.Label();
-            this.buttonRegistration = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.buttonListOfCharities = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.labelPlease = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBackGround)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTimer)).BeginInit();
             this.SuspendLayout();
@@ -126,115 +124,70 @@
             this.labelRunnerRegistration.AutoSize = true;
             this.labelRunnerRegistration.Font = new System.Drawing.Font("Rockwell", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelRunnerRegistration.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.labelRunnerRegistration.Location = new System.Drawing.Point(265, 116);
+            this.labelRunnerRegistration.Location = new System.Drawing.Point(191, 105);
             this.labelRunnerRegistration.Name = "labelRunnerRegistration";
-            this.labelRunnerRegistration.Size = new System.Drawing.Size(266, 31);
-            this.labelRunnerRegistration.TabIndex = 94;
-            this.labelRunnerRegistration.Text = "Detailed Information";
+            this.labelRunnerRegistration.Size = new System.Drawing.Size(368, 31);
+            this.labelRunnerRegistration.TabIndex = 78;
+            this.labelRunnerRegistration.Text = "Thanks for your sponsorship!";
             this.labelRunnerRegistration.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // buttonRegistration
+            // labelPlease
             // 
-            this.buttonRegistration.AutoEllipsis = true;
-            this.buttonRegistration.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.buttonRegistration.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonRegistration.Font = new System.Drawing.Font("Rockwell", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonRegistration.ForeColor = System.Drawing.Color.White;
-            this.buttonRegistration.Location = new System.Drawing.Point(69, 166);
-            this.buttonRegistration.Margin = new System.Windows.Forms.Padding(4);
-            this.buttonRegistration.Name = "buttonRegistration";
-            this.buttonRegistration.Size = new System.Drawing.Size(314, 50);
-            this.buttonRegistration.TabIndex = 95;
-            this.buttonRegistration.Text = "Marathon Skills 2021";
-            this.buttonRegistration.UseVisualStyleBackColor = false;
+            this.labelPlease.AutoSize = true;
+            this.labelPlease.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPlease.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.labelPlease.Location = new System.Drawing.Point(101, 145);
+            this.labelPlease.Name = "labelPlease";
+            this.labelPlease.Size = new System.Drawing.Size(589, 23);
+            this.labelPlease.TabIndex = 79;
+            this.labelPlease.Text = "Thank you for supporting the runner in Marathon Skills 2021!";
+            this.labelPlease.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button1
+            // label1
             // 
-            this.button1.AutoEllipsis = true;
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Rockwell", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(69, 224);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(314, 50);
-            this.button1.TabIndex = 95;
-            this.button1.Text = "Previous Results";
-            this.button1.UseVisualStyleBackColor = false;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label1.Location = new System.Drawing.Point(252, 181);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(80, 23);
+            this.label1.TabIndex = 80;
+            this.label1.Text = "Runner";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button2
+            // label2
             // 
-            this.button2.AutoEllipsis = true;
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Rockwell", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(69, 282);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(314, 50);
-            this.button2.TabIndex = 95;
-            this.button2.Text = "BMI calculator";
-            this.button2.UseVisualStyleBackColor = false;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label2.Location = new System.Drawing.Point(252, 220);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(82, 23);
+            this.label2.TabIndex = 81;
+            this.label2.Text = "Charity";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button3
+            // label3
             // 
-            this.button3.AutoEllipsis = true;
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Rockwell", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(391, 166);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(314, 50);
-            this.button3.TabIndex = 95;
-            this.button3.Text = "How long is the marathon";
-            this.button3.UseVisualStyleBackColor = false;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Rockwell", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label3.Location = new System.Drawing.Point(405, 263);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(31, 32);
+            this.label3.TabIndex = 82;
+            this.label3.Text = "$";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // buttonListOfCharities
-            // 
-            this.buttonListOfCharities.AutoEllipsis = true;
-            this.buttonListOfCharities.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.buttonListOfCharities.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonListOfCharities.Font = new System.Drawing.Font("Rockwell", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonListOfCharities.ForeColor = System.Drawing.Color.White;
-            this.buttonListOfCharities.Location = new System.Drawing.Point(391, 224);
-            this.buttonListOfCharities.Margin = new System.Windows.Forms.Padding(4);
-            this.buttonListOfCharities.Name = "buttonListOfCharities";
-            this.buttonListOfCharities.Size = new System.Drawing.Size(314, 50);
-            this.buttonListOfCharities.TabIndex = 95;
-            this.buttonListOfCharities.Text = "List of Charities";
-            this.buttonListOfCharities.UseVisualStyleBackColor = false;
-            this.buttonListOfCharities.Click += new System.EventHandler(this.buttonListOfCharities_Click);
-            // 
-            // button5
-            // 
-            this.button5.AutoEllipsis = true;
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Rockwell", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(391, 282);
-            this.button5.Margin = new System.Windows.Forms.Padding(4);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(314, 50);
-            this.button5.TabIndex = 95;
-            this.button5.Text = "BMR calculator";
-            this.button5.UseVisualStyleBackColor = false;
-            // 
-            // FormAbout
+            // FormSponsorConfirm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(774, 501);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.buttonListOfCharities);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.buttonRegistration);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelPlease);
             this.Controls.Add(this.labelRunnerRegistration);
             this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.labelTimer);
@@ -247,10 +200,10 @@
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(790, 540);
             this.MinimumSize = new System.Drawing.Size(790, 540);
-            this.Name = "FormAbout";
+            this.Name = "FormSponsorConfirm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Marathon 2021 - About event";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormAbout_FormClosed);
+            this.Text = "Marathon 2021 - Sponsor Confirm";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormAuth_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBackGround)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTimer)).EndInit();
             this.ResumeLayout(false);
@@ -268,12 +221,10 @@
         private System.Windows.Forms.Button buttonBack;
         private System.Windows.Forms.Timer timer;
         private System.Windows.Forms.Label labelRunnerRegistration;
-        private System.Windows.Forms.Button buttonRegistration;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button buttonListOfCharities;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Label labelPlease;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
 

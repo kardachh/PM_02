@@ -29,5 +29,12 @@ namespace marathon_skills_2021.forms
             TimeSpan duration = Convert.ToDateTime("8.03.2021 6:00:00") - DateTime.Now;
             labelTimer.Text = duration.ToString("%d") + " days " + duration.ToString(@"hh\:mm\:ss");
         }
+
+        private void buttonListOfCharities_Click(object sender, EventArgs e)
+        {
+            Form formListOfCharities = new forms.FormListOfCharities(this);
+            Hide();
+            formListOfCharities.Show();
+        }
     }
 }
