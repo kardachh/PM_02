@@ -46,7 +46,7 @@
             this.pictureBoxLogo1 = new System.Windows.Forms.PictureBox();
             this.labelDescription1 = new System.Windows.Forms.Label();
             this.labelName1 = new System.Windows.Forms.Label();
-            this.labelRunnerRegistration = new System.Windows.Forms.Label();
+            this.labelListofCharity = new System.Windows.Forms.Label();
             this.labelPlease = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBackGround)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTimer)).BeginInit();
@@ -144,6 +144,7 @@
             this.labelDescription3.AutoSize = true;
             this.labelDescription3.BackColor = System.Drawing.Color.Transparent;
             this.labelDescription3.Font = new System.Drawing.Font("Rockwell", 15.75F);
+            this.labelDescription3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.labelDescription3.Location = new System.Drawing.Point(179, 376);
             this.labelDescription3.Name = "labelDescription3";
             this.labelDescription3.Size = new System.Drawing.Size(122, 23);
@@ -156,6 +157,7 @@
             this.labelName3.AutoSize = true;
             this.labelName3.BackColor = System.Drawing.Color.Transparent;
             this.labelName3.Font = new System.Drawing.Font("Rockwell", 15.75F);
+            this.labelName3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.labelName3.Location = new System.Drawing.Point(178, 353);
             this.labelName3.Name = "labelName3";
             this.labelName3.Size = new System.Drawing.Size(66, 23);
@@ -179,6 +181,7 @@
             this.labelDescription2.AutoSize = true;
             this.labelDescription2.BackColor = System.Drawing.Color.Transparent;
             this.labelDescription2.Font = new System.Drawing.Font("Rockwell", 15.75F);
+            this.labelDescription2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.labelDescription2.Location = new System.Drawing.Point(179, 293);
             this.labelDescription2.Name = "labelDescription2";
             this.labelDescription2.Size = new System.Drawing.Size(122, 23);
@@ -191,6 +194,7 @@
             this.labelName2.AutoSize = true;
             this.labelName2.BackColor = System.Drawing.Color.Transparent;
             this.labelName2.Font = new System.Drawing.Font("Rockwell", 15.75F);
+            this.labelName2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.labelName2.Location = new System.Drawing.Point(179, 270);
             this.labelName2.Name = "labelName2";
             this.labelName2.Size = new System.Drawing.Size(66, 23);
@@ -214,6 +218,7 @@
             this.labelDescription1.AutoSize = true;
             this.labelDescription1.BackColor = System.Drawing.Color.Transparent;
             this.labelDescription1.Font = new System.Drawing.Font("Rockwell", 15.75F);
+            this.labelDescription1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.labelDescription1.Location = new System.Drawing.Point(179, 210);
             this.labelDescription1.Name = "labelDescription1";
             this.labelDescription1.Size = new System.Drawing.Size(122, 23);
@@ -226,6 +231,7 @@
             this.labelName1.AutoSize = true;
             this.labelName1.BackColor = System.Drawing.Color.Transparent;
             this.labelName1.Font = new System.Drawing.Font("Rockwell", 15.75F);
+            this.labelName1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.labelName1.Location = new System.Drawing.Point(178, 187);
             this.labelName1.Name = "labelName1";
             this.labelName1.Size = new System.Drawing.Size(66, 23);
@@ -233,17 +239,17 @@
             this.labelName1.Text = "Name";
             this.labelName1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // labelRunnerRegistration
+            // labelListofCharity
             // 
-            this.labelRunnerRegistration.AutoSize = true;
-            this.labelRunnerRegistration.Font = new System.Drawing.Font("Rockwell", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelRunnerRegistration.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.labelRunnerRegistration.Location = new System.Drawing.Point(311, 76);
-            this.labelRunnerRegistration.Name = "labelRunnerRegistration";
-            this.labelRunnerRegistration.Size = new System.Drawing.Size(185, 31);
-            this.labelRunnerRegistration.TabIndex = 118;
-            this.labelRunnerRegistration.Text = "List of Charity";
-            this.labelRunnerRegistration.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelListofCharity.AutoSize = true;
+            this.labelListofCharity.Font = new System.Drawing.Font("Rockwell", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelListofCharity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.labelListofCharity.Location = new System.Drawing.Point(311, 76);
+            this.labelListofCharity.Name = "labelListofCharity";
+            this.labelListofCharity.Size = new System.Drawing.Size(185, 31);
+            this.labelListofCharity.TabIndex = 118;
+            this.labelListofCharity.Text = "List of Charity";
+            this.labelListofCharity.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // labelPlease
             // 
@@ -264,7 +270,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(774, 501);
             this.Controls.Add(this.labelPlease);
-            this.Controls.Add(this.labelRunnerRegistration);
+            this.Controls.Add(this.labelListofCharity);
             this.Controls.Add(this.pictureBoxLogo3);
             this.Controls.Add(this.labelDescription3);
             this.Controls.Add(this.labelName3);
@@ -317,7 +323,7 @@
         private System.Windows.Forms.PictureBox pictureBoxLogo1;
         private System.Windows.Forms.Label labelDescription1;
         private System.Windows.Forms.Label labelName1;
-        private System.Windows.Forms.Label labelRunnerRegistration;
+        private System.Windows.Forms.Label labelListofCharity;
         private System.Windows.Forms.Label labelPlease;
     }
 }

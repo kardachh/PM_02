@@ -79,11 +79,23 @@
     <Compile Include="forms\FormAddRunner.Designer.cs">
       <DependentUpon>FormAddRunner.cs</DependentUpon>
     </Compile>
+    <Compile Include="forms\FormAdminMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FormAdminMenu.Designer.cs">
+      <DependentUpon>FormAdminMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="forms\FormAuth.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="forms\FormAuth.Designer.cs">
       <DependentUpon>FormAuth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\FormCoordinatorMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FormCoordinatorMenu.Designer.cs">
+      <DependentUpon>FormCoordinatorMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="forms\FormListOfCharities.cs">
       <SubType>Form</SubType>
@@ -96,6 +108,12 @@
     </Compile>
     <Compile Include="forms\FormMarathon.Designer.cs">
       <DependentUpon>FormMarathon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\FormRunnerMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FormRunnerMenu.Designer.cs">
+      <DependentUpon>FormRunnerMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="forms\FormSponsor.cs">
       <SubType>Form</SubType>
@@ -180,14 +198,23 @@
     <EmbeddedResource Include="forms\FormAddRunner.resx">
       <DependentUpon>FormAddRunner.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="forms\FormAdminMenu.resx">
+      <DependentUpon>FormAdminMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="forms\FormAuth.resx">
       <DependentUpon>FormAuth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FormCoordinatorMenu.resx">
+      <DependentUpon>FormCoordinatorMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\FormListOfCharities.resx">
       <DependentUpon>FormListOfCharities.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\FormMarathon.resx">
       <DependentUpon>FormMarathon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FormRunnerMenu.resx">
+      <DependentUpon>FormRunnerMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\FormSponsor.resx">
       <DependentUpon>FormSponsor.cs</DependentUpon>
