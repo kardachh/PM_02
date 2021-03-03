@@ -1,12 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
 
-/*
-    1)сделать таймер +
-    2)дописать все кнопки -
-    3)скрытие окна при открытии нового +
-*/
-
 namespace marathon_skills_2021
 {
     public partial class FormMarathon : Form

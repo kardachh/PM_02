@@ -20,11 +20,9 @@ namespace marathon_skills_2021.forms
         }
         private void buttonShowRunner_Click(object sender, EventArgs e)
         {
-            // need add login 
-            // remove this >
-            Form formRunnerMenu = new forms.FormRunnerMenu(this);
+            Form formAuth = new forms.FormAuth(this);
             Hide();
-            formRunnerMenu.Show();
+            formAuth.Show();
         }
         private void buttonAddNewRunner_Click(object sender, EventArgs e)
         {

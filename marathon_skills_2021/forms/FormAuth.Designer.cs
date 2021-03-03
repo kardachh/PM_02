@@ -35,7 +35,6 @@
             this.pictureBoxTimer = new System.Windows.Forms.PictureBox();
             this.labelBefore = new System.Windows.Forms.Label();
             this.labelTimer = new System.Windows.Forms.Label();
-            this.buttonBack = new System.Windows.Forms.Button();
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.labelPlease = new System.Windows.Forms.Label();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
@@ -101,21 +100,6 @@
             this.labelTimer.Size = new System.Drawing.Size(0, 35);
             this.labelTimer.TabIndex = 5;
             // 
-            // buttonBack
-            // 
-            this.buttonBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonBack.Font = new System.Drawing.Font("Rockwell", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonBack.ForeColor = System.Drawing.Color.White;
-            this.buttonBack.Location = new System.Drawing.Point(13, 6);
-            this.buttonBack.Margin = new System.Windows.Forms.Padding(4);
-            this.buttonBack.Name = "buttonBack";
-            this.buttonBack.Size = new System.Drawing.Size(99, 35);
-            this.buttonBack.TabIndex = 8;
-            this.buttonBack.Text = "< Back";
-            this.buttonBack.UseVisualStyleBackColor = false;
-            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
-            // 
             // timer
             // 
             this.timer.Enabled = true;
@@ -125,18 +109,18 @@
             // 
             this.labelPlease.AutoSize = true;
             this.labelPlease.BackColor = System.Drawing.SystemColors.Control;
-            this.labelPlease.Font = new System.Drawing.Font("Rockwell", 15.75F);
+            this.labelPlease.Font = new System.Drawing.Font("Rockwell", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPlease.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.labelPlease.Location = new System.Drawing.Point(133, 135);
+            this.labelPlease.Location = new System.Drawing.Point(6, 156);
             this.labelPlease.Name = "labelPlease";
-            this.labelPlease.Size = new System.Drawing.Size(512, 23);
+            this.labelPlease.Size = new System.Drawing.Size(763, 27);
             this.labelPlease.TabIndex = 76;
-            this.labelPlease.Text = "Please log in to the system using your email address";
+            this.labelPlease.Text = "Please log in to the system using your email address and password.\r\n";
             this.labelPlease.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // textBoxPassword
             // 
-            this.textBoxPassword.Location = new System.Drawing.Point(298, 233);
+            this.textBoxPassword.Location = new System.Drawing.Point(302, 248);
             this.textBoxPassword.Margin = new System.Windows.Forms.Padding(5);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.Size = new System.Drawing.Size(214, 23);
@@ -148,7 +132,7 @@
             this.labelPassword.AutoSize = true;
             this.labelPassword.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.labelPassword.Location = new System.Drawing.Point(183, 233);
+            this.labelPassword.Location = new System.Drawing.Point(187, 248);
             this.labelPassword.Margin = new System.Windows.Forms.Padding(5);
             this.labelPassword.Name = "labelPassword";
             this.labelPassword.Size = new System.Drawing.Size(109, 23);
@@ -158,7 +142,7 @@
             // 
             // textBoxEmail
             // 
-            this.textBoxEmail.Location = new System.Drawing.Point(298, 200);
+            this.textBoxEmail.Location = new System.Drawing.Point(302, 215);
             this.textBoxEmail.Margin = new System.Windows.Forms.Padding(5);
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.Size = new System.Drawing.Size(214, 23);
@@ -170,7 +154,7 @@
             this.labelEmail.AutoSize = true;
             this.labelEmail.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.labelEmail.Location = new System.Drawing.Point(222, 200);
+            this.labelEmail.Location = new System.Drawing.Point(226, 215);
             this.labelEmail.Margin = new System.Windows.Forms.Padding(5);
             this.labelEmail.Name = "labelEmail";
             this.labelEmail.Size = new System.Drawing.Size(70, 23);
@@ -185,13 +169,14 @@
             this.buttonCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCancel.Font = new System.Drawing.Font("Rockwell", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCancel.ForeColor = System.Drawing.Color.White;
-            this.buttonCancel.Location = new System.Drawing.Point(385, 285);
+            this.buttonCancel.Location = new System.Drawing.Point(389, 300);
             this.buttonCancel.Margin = new System.Windows.Forms.Padding(4);
             this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.Size = new System.Drawing.Size(146, 37);
+            this.buttonCancel.Size = new System.Drawing.Size(140, 48);
             this.buttonCancel.TabIndex = 83;
             this.buttonCancel.Text = "Cancel";
             this.buttonCancel.UseVisualStyleBackColor = false;
+            this.buttonCancel.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // buttonLogin
             // 
@@ -200,13 +185,14 @@
             this.buttonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonLogin.Font = new System.Drawing.Font("Rockwell", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonLogin.ForeColor = System.Drawing.Color.White;
-            this.buttonLogin.Location = new System.Drawing.Point(231, 285);
+            this.buttonLogin.Location = new System.Drawing.Point(235, 300);
             this.buttonLogin.Margin = new System.Windows.Forms.Padding(4);
             this.buttonLogin.Name = "buttonLogin";
-            this.buttonLogin.Size = new System.Drawing.Size(146, 37);
+            this.buttonLogin.Size = new System.Drawing.Size(140, 48);
             this.buttonLogin.TabIndex = 82;
             this.buttonLogin.Text = "Login";
             this.buttonLogin.UseVisualStyleBackColor = false;
+            this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
             // 
             // FormAuth
             // 
@@ -220,7 +206,6 @@
             this.Controls.Add(this.textBoxEmail);
             this.Controls.Add(this.labelEmail);
             this.Controls.Add(this.labelPlease);
-            this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.labelTimer);
             this.Controls.Add(this.labelBefore);
             this.Controls.Add(this.pictureBoxTimer);
@@ -249,7 +234,6 @@
         private System.Windows.Forms.PictureBox pictureBoxTimer;
         private System.Windows.Forms.Label labelBefore;
         private System.Windows.Forms.Label labelTimer;
-        private System.Windows.Forms.Button buttonBack;
         private System.Windows.Forms.Timer timer;
         private System.Windows.Forms.Label labelPlease;
         private System.Windows.Forms.TextBox textBoxPassword;
