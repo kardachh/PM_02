@@ -41,7 +41,7 @@ namespace marathon_skills_2021.forms
                     sponsorship.Amount = Convert.ToInt32(textBoxCash.Text);
                     //  Program.marathonSkillsEntities.Sponsorship.Add(sponsorship);
                     //  Program.marathonSkillsEntities.SaveChanges();
-                    string[] info = { comboBoxRunner.SelectedItem.ToString(), textBoxName.Text, textBoxCash.Text };
+                    string[] info = { comboBoxRunner.SelectedItem.ToString(), labelNameCharity.Text, textBoxCash.Text };
                     FormSponsorConfirm formSponsorConfirm = new forms.FormSponsorConfirm(this,info);
                     Hide();
                     formSponsorConfirm.Show();
@@ -54,9 +54,11 @@ namespace marathon_skills_2021.forms
         void ShowRunners()
         {
             comboBoxRunner.Items.Clear();
-            foreach (data.Runner runnerSet in Program.marathonSkillsEntities.Runner)
+            foreach (data.RegistrationEvent registrationEvent in Program.marathonSkillsEntities.RegistrationEvent)
             {
-                string[] item = { runnerSet.RunnerId.ToString() + ".", runnerSet.User.FirstName + " " + runnerSet.User.LastName };
+                string[] item = { registrationEvent.Registration.Runner.User.FirstName + " " + registrationEvent.Registration.Runner.User.LastName
+                +" - " + registrationEvent.BibNumber.ToString() + "("+registrationEvent.Registration.Runner.Country.CountryName+")"};
+                //string[] item = { runnerSet.RunnerId.ToString() + ".", runnerSet.User.FirstName + " " + runnerSet.User.LastName };
                 comboBoxRunner.Items.Add(string.Join(" ", item));
             }
         }

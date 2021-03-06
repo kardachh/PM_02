@@ -126,6 +126,7 @@
             this.textBoxPassword.Size = new System.Drawing.Size(214, 23);
             this.textBoxPassword.TabIndex = 81;
             this.textBoxPassword.WordWrap = false;
+            this.textBoxPassword.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBoxEmail_KeyUp);
             // 
             // labelPassword
             // 
@@ -148,6 +149,7 @@
             this.textBoxEmail.Size = new System.Drawing.Size(214, 23);
             this.textBoxEmail.TabIndex = 79;
             this.textBoxEmail.WordWrap = false;
+            this.textBoxEmail.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBoxEmail_KeyUp);
             // 
             // labelEmail
             // 
@@ -193,6 +195,7 @@
             this.buttonLogin.Text = "Login";
             this.buttonLogin.UseVisualStyleBackColor = false;
             this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
+            this.buttonLogin.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBoxEmail_KeyUp);
             // 
             // FormAuth
             // 
@@ -220,6 +223,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Marathon 2021 - Authorization";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormAuth_FormClosed);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBoxEmail_KeyUp);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBackGround)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTimer)).EndInit();
             this.ResumeLayout(false);

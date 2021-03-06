@@ -14,7 +14,7 @@ namespace marathon_skills_2021.forms
         }
         private void FormAuth_FormClosed(object sender, FormClosedEventArgs e)
         {
-            //buttonBack
+            buttonCancel.PerformClick();
         }
         private void timer_Tick(object sender, EventArgs e)
         {
@@ -24,15 +24,7 @@ namespace marathon_skills_2021.forms
         private void buttonBack_Click(object sender, EventArgs e)
         {
             Hide();
-            if (formPrev.Name == "FormMarathon")
-            {
-                formPrev.Show();
-            }
-            else
-            {
-                formPrev = new FormMarathon();
-                formPrev.Show();
-            }
+            FormMarathon.mainForm.Show();
             Close();
         }
 
@@ -92,5 +84,10 @@ namespace marathon_skills_2021.forms
             public string role;
         }
         public static Users user = new Users();
+
+        private void textBoxEmail_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter) buttonLogin.PerformClick();
+        }
     }
 }

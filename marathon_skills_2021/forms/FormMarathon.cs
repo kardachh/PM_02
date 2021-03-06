@@ -5,9 +5,11 @@ namespace marathon_skills_2021
 {
     public partial class FormMarathon : Form
     {
+        public static FormMarathon mainForm;
         public FormMarathon()
         {
             InitializeComponent();
+            mainForm = this;
             timer_Tick(timer, null);
         }
 

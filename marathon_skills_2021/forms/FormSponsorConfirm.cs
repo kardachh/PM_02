@@ -19,7 +19,7 @@ namespace marathon_skills_2021.forms
         }
         private void FormAuth_FormClosed(object sender, FormClosedEventArgs e)
         {
-            formPrev.Show();
+            buttonBack.PerformClick();
         }
         private void timer_Tick(object sender, EventArgs e)
         {
@@ -28,6 +28,8 @@ namespace marathon_skills_2021.forms
         }
         private void buttonBack_Click(object sender, EventArgs e)
         {
+            Hide();
+            FormMarathon.mainForm.Show();
             Close();
         }
     }
