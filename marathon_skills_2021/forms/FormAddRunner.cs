@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
 namespace marathon_skills_2021.forms
 {
@@ -42,7 +43,7 @@ namespace marathon_skills_2021.forms
 
             if (openFileDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
-                textBoxPhotoFile.Text =  openFileDialog.FileName;
+                textBoxPhotoFile.Text = openFileDialog.FileName;
                 pictureBoxPhoto.SizeMode = PictureBoxSizeMode.StretchImage;
                 pictureBoxPhoto.Image = Image.FromFile(openFileDialog.FileName);
             }
@@ -55,17 +56,28 @@ namespace marathon_skills_2021.forms
                     textBoxConfirmPassword.Text != "" && textBoxLastName.Text != "" && comboBoxGender.SelectedItem != null &&
                     comboBoxCountry.SelectedItem != null && dateTimePickerDOB.Value != null)
                 {
-                    if (PasswordCheck())
+                    if (PasswordCheck() && EmailCheck())
                     {
                         data.Runner runner = new data.Runner();
+                        data.User user = new data.User();
+                        user.Email = textBoxEmail.Text;
+                        user.Password = textBoxPassword.Text;
+                        user.FirstName = textBoxFirstName.Text;
+                        user.LastName = textBoxLastName.Text;
+                        user.RoleId = "R";
                         runner.Email = textBoxEmail.Text;
-                        runner.User.Email = textBoxEmail.Text;
-                        runner.User.Password = textBoxPassword.Text;
                         runner.Gender = comboBoxGender.SelectedItem.ToString();
                         runner.DateOfBirth = dateTimePickerDOB.Value;
                         runner.CountryCode = comboBoxCountry.SelectedItem.ToString();
-                        //  Program.marathonSkillsEntities.Runner.Add(runner);
-                        //  Program.marathonSkillsEntities.SaveChanges();
+                        //Program.marathonSkillsEntities.Runner.Add(runner);
+                        //Program.marathonSkillsEntities.User.Add(user);
+                        //Program.marathonSkillsEntities.SaveChanges();
+                        FormAuth.user.email = user.Email;
+                        FormAuth.user.password = user.Password;
+                        FormAuth.user.role = user.RoleId;
+                        forms.FormRegistrationOnMarathon formRegistrationOnMarathon= new forms.FormRegistrationOnMarathon(this);
+                        this.Hide();
+                        formRegistrationOnMarathon.Show();
                     }
                 }
                 else MessageBox.Show("Данные не выбраны", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -77,6 +89,18 @@ namespace marathon_skills_2021.forms
             if (textBoxPassword.Text != textBoxConfirmPassword.Text)
             {
                 MessageBox.Show("Пароли не совпадают!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+            else return true;
+        }
+        private bool EmailCheck()
+        {
+            Regex emailRegex = new Regex(@"\w{2,10}@\w{2,10}.\w{2,10}");
+            Match emailMatch = emailRegex.Match(textBoxEmail.Text);
+
+            if (emailMatch.Value == "")
+            {
+                MessageBox.Show("Некорректный формат email!", "Оповещение системы");
                 return false;
             }
             else return true;
